@@ -41,12 +41,8 @@ a:visited{
 }
 
 
-/* This is Aubri's section */
-#womenInCS {
-  font-family: 'Dosis', sans-serif;
-  font-size: 35px;
-  }
 
+<<<<<<< HEAD
   .sidenav {
       height: 100%;
       width: 0;
@@ -69,22 +65,55 @@ a:visited{
       display: block;
       transition: 0.3s;
       color: #f2be54;
+=======
 
-  }
+>>>>>>> 48c79ac182972c4d42df16a1a54ef3ff80899cc4
 
-  .sidenav a:hover{
-      color: #f1f1f1;
-  }
 
-  .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-  }
 
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 15px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This is Aubri's section */
+#womenInCS {
+  font-family: 'Dosis', sans-serif;
+  font-size: 35px;
   }
