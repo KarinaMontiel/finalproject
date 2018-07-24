@@ -10,6 +10,9 @@ font-family: 'Poiret One', cursive;
   font-family: 'Monoton', cursive;
   font-size: 80px;
 }
+#hometext{
+  font-size: 30px;
+}
 #nav-bar {
     display:flex;
     color:#f2be54;
@@ -21,8 +24,8 @@ font-family: 'Poiret One', cursive;
     background-color:#87aeb4;
     padding:10px;
     font-size: 30px;
-
 }
+
 
 a:link{
   color:#f2be54;
