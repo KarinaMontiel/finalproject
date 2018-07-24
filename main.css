@@ -11,8 +11,17 @@ color: #f2be54;
 }
 
 #nav-bar .item {
+    text-decoration: none;
     background-color:#87aeb4;
     padding:10px;
+}
+
+a:link{
+  color:#f2be54;
+}
+
+a:visited{
+  color:#f2be54;
 }
 
 
