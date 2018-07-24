@@ -4,6 +4,10 @@ background-color: #153e5c;
 color: #f2be54;
 }
 
+#title {
+  font-family: 'Monoton', cursive;
+  font-size: 80px;
+}
 #nav-bar {
     display:flex;
     color:#f2be54;
@@ -14,6 +18,8 @@ color: #f2be54;
     text-decoration: none;
     background-color:#87aeb4;
     padding:10px;
+    font-size: 30px;
+
 }
 
 a:link{
