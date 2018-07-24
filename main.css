@@ -4,9 +4,16 @@ background-color: #153e5c;
 color: #f2be54;
 }
 
+#nav-bar {
+    display:flex;
+    color:#f2be54;
+    justify-content:space-around;
+}
 
-
-
+#nav-bar .item {
+    background-color:#87aeb4;
+    padding:10px;
+}
 
 
 
