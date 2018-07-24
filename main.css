@@ -5,7 +5,7 @@ color: #f2be54;
 }
 
 #nav-bar {
-    display:flex;
+    display: inline;
     color:#f2be54;
     justify-content:space-around;
 }
