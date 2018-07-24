@@ -12,13 +12,22 @@ color: #f2be54;
     display:flex;
     color:#f2be54;
     justify-content:space-around;
-    text-decoration: none;
+
 
 }
 
 #nav-bar .item {
+    text-decoration: none;
     background-color:#87aeb4;
     padding:10px;
+}
+
+a:link{
+  color:#f2be54;
+}
+
+a:visited{
+  color:#f2be54;
 }
 
 
