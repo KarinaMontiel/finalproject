@@ -4,10 +4,6 @@ background-color: #153e5c;
 color: #f2be54;
 }
 
-#title {
-  font-family: 'Monoton', cursive;
-  font-size: 80px;
-}
 #nav-bar {
     display:flex;
     color:#f2be54;
@@ -45,9 +41,3 @@ a:visited{
   font-color: #f2be54;
   font-size: px;
 }
-
-
-
-
-
-/* This is Aubri's section */
