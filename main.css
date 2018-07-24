@@ -4,16 +4,10 @@ background-color: #153e5c;
 color: #f2be54;
 }
 
-#title {
-  font-family: 'Monoton', cursive;
-  font-size: 80px;
-}
 #nav-bar {
     display:flex;
     color:#f2be54;
     justify-content:space-around;
-    text-decoration: none;
-
 }
 
 #nav-bar .item {
@@ -34,9 +28,10 @@ color: #f2be54;
   font-size: px;
 }
 
-<img src="pushyourself.jpg" alt="pushyourslef" width="300" height="200">
-
 
 
 
 /* This is Aubri's section */
+#womenInCS {
+  font-family: 'Dosis', sans-serif;
+  }
