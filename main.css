@@ -12,8 +12,6 @@ color: #f2be54;
     display:flex;
     color:#f2be54;
     justify-content:space-around;
-
-
 }
 
 #nav-bar .item {
@@ -28,6 +26,11 @@ a:link{
 
 a:visited{
   color:#f2be54;
+}
+
+.sub{
+
+
 }
 
 
