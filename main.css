@@ -25,10 +25,13 @@ color: #f2be54;
 #bluesection{
   font-family: 'IBM Plex Mono', monospace;
   font-color: #f2be54;
-  font-size: 30px;
+  font-size: px;
 }
 
 
 
 
 /* This is Aubri's section */
+womenInCS {
+font-family: 'Dosis', sans-serif;
+}
