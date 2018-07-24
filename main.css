@@ -13,18 +13,6 @@ font-family: 'Poiret One', cursive;
 #hometext{
   font-size: 30px;
 }
-#nav-bar {
-    display:flex;
-    color:#f2be54;
-    justify-content:space-around;
-}
-
-#nav-bar .item {
-    text-decoration: none;
-    background-color:#87aeb4;
-    padding:10px;
-    font-size: 30px;
-}
 
 
 a:link{
