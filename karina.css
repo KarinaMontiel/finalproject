@@ -15,8 +15,17 @@
 #bios{
   font-family: 'Cinzel Decorative', cursive;
   color:#f2be54;
+  font-size: 20px;
 }
 
 html{
   background-color: #153e5c;
+    color:#f2be54;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
