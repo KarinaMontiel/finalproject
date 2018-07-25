@@ -29,9 +29,22 @@
     display: flex;
 }
 .womenintechsection img{
-  float: left;
+  margin-center:inherit;
 }
 
+#womenintechsection{
+  font-family:'Merienda', cursive;
+  font-color:#f2be54;
+  font-size:36px;
+}
+#nicole{
+  text-align: right;
+}
+#bluesection{
+  font-family:'Merienda', cursive;
+  font-color:#f2be54;
+  font-size:40px;
+}
 /* tell the container's children to float left: */
 /* .float-nicoledominguez > * {
   float:left;
@@ -60,3 +73,5 @@
     flex: 33.33%;
     padding: 5px;
 }
+/* <p><img src="nicoledominguez.jpg" class="center" alt="nicoledominguez" style="width:90" "height=89" align="middle">NICOLE DOMINGUEZ: An empathetic curious human. Passionate */
+/* about delightful, usable experiences made possible by great reusable and scalable code.</p> */
