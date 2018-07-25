@@ -3,9 +3,79 @@
   <head>
     <link rel="stylesheet" href="karina.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster+Two|Unica+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+    <style>
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #153e5c;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 50px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        color: #f2be54;
+        .sidenav a:hover{
+            color: #f1f1f1;
+        }
+
+        .sidenav a:hover{
+            color: #f1f1f1;
+        }
+
+      .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+      @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 15px;}
+        }
+    </style>
   </head>
     <body>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
+
+      <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+
+
+      </script>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn"onclick="closeNav()">&times;</a>
+        <a href="finalproject.html"> Home</a>
+        <a href="#">Scholarships</a>
+        <a href="womenInCS.html">Women in CS</a>
+        <a href="#">College</a>
+        <a href="encouragement.html">Encouragement</a>
+        <a href="creators.html">Creators</a>
+        <a href="FAQ.html">FAQ</a>
+      </div>
       <h1 id="title3"><center> FAQs For College</center> </h1>
       <!-- intro to the page -->
 
@@ -61,25 +131,29 @@
           </p>
         <h3>Are most of your classes taught by professors or TA’s? </h3>
           <p class="answers">
-            Marivi Sifuentes: Courses that don’t have a discussion (like Calculus or English) are usually taught by professors or Graduate Student Instructors (GSI).
+            <strong>Marivi Sifuentes:</strong>
+               Courses that don’t have a discussion (like Calculus or English) are usually taught by professors or Graduate Student Instructors (GSI).
             Lectures are always led by professors but if a lecture has a lab or a discussion that is usually led by GSI. In some cases I have had TAs
             (undergrads) lead but usually these sections aren’t as helpful because of their lack of experience. I would suggest that you use Rate My Professor
             to figure out which lecturer or professor to choose.
           </p>
           <p class="answers">
-            Nicole Martindale: All of my classes have lectures and discussions. So lectures are either Monday, Wednesday, Friday or Tuesday, Thursday and discussions
+            <strong> Nicole Martindale:</strong>
+            All of my classes have lectures and discussions. So lectures are either Monday, Wednesday, Friday or Tuesday, Thursday and discussions
             for each of these classes are once a week. Lectures are taught by professors/lecturers and discussions are led by TA’s/tutors who are usually graduate students.
           </p>
         <h3>How big are your classes? </h3>
           <p class="answers">
-            Marvi Sifuentes: Sometimes I’m in auditorium with 400+ people, other
+            <strong>Marvi Sifuentes:</strong>
+            Sometimes I’m in auditorium with 400+ people, other
             times I’m in a lecture hall with space for 70, and sometimes I’m in a
             classroom with 15-30 people. It can sometimes depend on what class you’re
             taking, introductory courses in any subject are usually in the hundreds
             but upper-level courses tend to be smaller.
           </p>
           <p class='answers'>
-            Nicole Martindale: All of my lectures are minimum 100 students.
+            <strong>Nicole Martindale:</strong>
+            All of my lectures are minimum 100 students.
             On average, lectures are usually 300-400 students which seems really
             big and scary but professors have microphones and usually slides or
             are demonstrating something on a big projector screen. Also that’s why
@@ -91,14 +165,16 @@
           </p>
         <h3>Is it popular to study abroad?</h3>
           <p class="answers">
-            Marivi Sifuentes: Very! There are companies that provide opportunities but I
+            <strong>Marivi Sifuentes: </strong>
+            Very! There are companies that provide opportunities but I
             would recommend that you speak with an advisor before signing up
             just so you can be completely sure that the courses will transfer to
             your university. Try finding/applying for study abroad scholarships
              offered by your university because it can be very expensive.
            </p>
            <p class="answers">
-            Nicole Martindale: Probably. I’m not sure since I haven’t thought about it yet but
+            <strong>Nicole Martindale:</strong>
+             Probably. I’m not sure since I haven’t thought about it yet but
              there’s a lot of resources on campus for scholarships and information.
             <a href="https://studyabroad.ucsd.edu/">Here</a> is a resource for UCSD's program.
           </p>
