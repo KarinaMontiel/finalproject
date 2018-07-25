@@ -28,7 +28,9 @@
 .row {
     display: flex;
 }
-
+.womenintechsection img{
+  float: right;
+}
 /* Create three equal columns that sits next to each other */
 .column {
     flex: 33.33%;
