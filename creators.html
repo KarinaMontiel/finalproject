@@ -3,9 +3,77 @@
   <head>
     <link rel="stylesheet" href="karina.css">
     <link href="https://fonts.googleapis.com/css?family=Chonburi|Cinzel+Decorative" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #153e5c;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 50px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            color: #f2be54;
+            .sidenav a:hover{
+                color: #f1f1f1;
+            }
+
+            .sidenav a:hover{
+                color: #f1f1f1;
+            }
+
+          .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+          @media screen and (max-height: 450px) {
+              .sidenav {padding-top: 15px;}
+              .sidenav a {font-size: 15px;}
+            }
+    </style>
   </head>
   <body>
     <h1 id="title2"><center> More About the Creators</center> </h1>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
+
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+
+    </script>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn"onclick="closeNav()">&times;</a>
+      <a href="finalproject.html"> Home</a>
+      <a href="#">Scholarships</a>
+      <a href="womenInCS.html">Women in CS</a>
+      <a href="#">College</a>
+      <a href="encouragement.html">Encouragement</a>
+      <a href="creators.html">Creators</a>
+    </div>
       <div id="bios">
         <p>
           <strong> <center><u>Aubri:</u></center></strong>
