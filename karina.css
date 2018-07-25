@@ -32,6 +32,7 @@ html{
 
 #title3{
   font-family: 'Abril Fatface', cursive;
+  font-size: 40px;
 }
 
 h3{
@@ -39,11 +40,13 @@ h3{
   text-decoration: underline;
   /* font-family: 'Abril Fatface', cursive; */
   font-family: 'Lobster Two', cursive;
+  font-size: 30px;
 
 }
 
 .answers{
   font-family: 'Unica One', cursive;
+  font-size: 20px;
 }
 
 
