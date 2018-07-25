@@ -51,6 +51,12 @@
     margin-right: auto;
     width: 20%;
 }
+#redsection{
+  font-family:'Roboto',sans-serif;
+  font-color:#87aeb4;
+  font-size:30px;
+}
+
 /* tell the container's children to float left: */
 /* .float-nicoledominguez > * {
   float:left;
