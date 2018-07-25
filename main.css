@@ -28,6 +28,13 @@ a:visited{
   font-size: 50px;
 }
 
+.allcharts{
+  /* margin: 100px; */
+  /* margin-left: 100px; */
+  /* justify-content: center; */
+  align:center;
+}
+
 
 
 
@@ -88,15 +95,9 @@ a:visited{
 
 
 /* This is Aubri's section */
-/*div class is for dots, div id is for hashtags  */
 #womenInCS {
   font-family: 'Dosis', sans-serif;
   font-size: 45px;
-  }
-
-  .header2{
-    font-family: 'Dosis', sans-serif;
-    font-size: 60px;
   }
 
   .center {
