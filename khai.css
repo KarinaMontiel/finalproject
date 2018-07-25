@@ -45,6 +45,12 @@
   font-color:#f2be54;
   font-size:40px;
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
 /* tell the container's children to float left: */
 /* .float-nicoledominguez > * {
   float:left;
