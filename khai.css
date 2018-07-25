@@ -29,6 +29,10 @@
     display: flex;
 }
 .womenintechsection img{
+  float: left;
+}
+
+.womenintechsection p{
   float: right;
 }
 /* Create three equal columns that sits next to each other */
