@@ -32,21 +32,28 @@
   float: left;
 }
 
-  .float-nicoledominguez * {
-    float:right;
-    margin-right:5px;
+/* tell the container's children to float left: */
+/* .float-nicoledominguez > * {
+  float:left;
+  margin-right:5px;
+} */
+
+/* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
+
+/* .clearfix {
+  *zoom:1 /* for IE */
 }
-.clearfix {
-    *zoom:1 /* for IE */
-}
-.clearfix:before,
+
+/* .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
+
 .clearfix:after {
-    clear: both;
-}
+  clear: both;
+} */ /
+
 
 /* Create three equal columns that sits next to each other */
 .column {
