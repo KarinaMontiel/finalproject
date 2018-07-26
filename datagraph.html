@@ -320,6 +320,62 @@ chart4.draw(data4, options4);
 }
 
 
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart12);
+
+
+function drawChart12() {
+var data12 = google.visualization.arrayToDataTable([
+['Task', 'Hours per Day'],
+['Female',12810],
+['Male',14012]
+
+]);
+
+var options12= {
+title: 'San Jose State University Undergraduate Gender',
+pieHole: 0.4,
+colors:['#f2be54', '87aeb4']
+};
+
+var chart12 = new google.visualization.PieChart(document.getElementById('datagraph12'));
+chart12.draw(data12, options12);
+}
+
+
+
+
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart13);
+
+function drawChart13() {
+var data13= google.visualization.arrayToDataTable([
+['Task', 'Hours per Day'],
+['African American', 905],
+['Asian',9652],
+['Hispanic/Latino',6843],
+['White',5132],
+['Ethnicity Unknown',2489]
+
+]);
+
+var options13= {
+title: 'San Jose State University Diversity',
+pieHole: 0.4,
+colors:['#f2be54', '#153e5c','#6a9ae8','#87aeb4','#cdd4ca']
+};
+
+var chart13 = new google.visualization.PieChart(document.getElementById('datagraph13'));
+chart13.draw(data13, options13);
+}
+
+
+
+
+
+
+
 
 
 google.charts.load("current", {packages:["corechart"]});
@@ -414,6 +470,8 @@ chart11.draw(data11, options11);
     <div id="datagraph4" style="width: 900px; height: 500px;"></div>
     <div id="datagraph10" style="width: 900px; height: 500px;"></div>
     <div id="datagraph11" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph12" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph13" style="width: 900px; height: 500px;"></div>
 </div>
 
   </body>
