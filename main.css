@@ -107,3 +107,13 @@ a:visited{
   .row {
       display: flex;
   }
+
+.header2{
+  font-family: 'Dosis', sans-serif;
+  font-size: 60px;
+  }
+
+.header3{
+    font-family: 'Dosis', sans-serif;
+    font-size: 60px;
+    }
