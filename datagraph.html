@@ -59,13 +59,13 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
-          ['Female',3819],
-          ['Male',4283]
+          ['Female',1345],
+          ['Other',1]
 
         ]);
 
         var options = {
-          title: 'Columbia University Undergraduate Gender',
+          title: 'Bryn Mawr College Undergraduate Gender',
           pieHole: 0.4,
           colors:['#f2be54', '87aeb4']
         };
@@ -84,21 +84,18 @@
       function drawChart2() {
         var data2 = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
-          ['African American', 619],
-          ['Asian',1441],
-          ['Hispanic/Latino',1068],
-          ['White',3077],
-          ['Ethnicity Unknown',636]
+          ['African American', 78],
+          ['Asian',166],
+          ['Hispanic/Latino',117],
+          ['White',478],
+          ['Ethnicity Unknown',185]
 
         ]);
 
         var options2 = {
-          title: 'Columbia University Diversity',
+          title: 'Bryn Mawr College Diversity',
           pieHole: 0.4,
           colors:['#f2be54', '#153e5c','#6a9ae8','#87aeb4','#cdd4ca']
-
-          // backgroundColor: '#153e5c'
-          // chartArea:{'backgroundColor':'red'}
         };
 
         var chart2 = new google.visualization.PieChart(document.getElementById('datagraph2'));
@@ -109,60 +106,60 @@
 
 
       google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart3);
+      google.charts.setOnLoadCallback(drawChart1);
 
 
-      function drawChart3() {
-        var data3 = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Female',3991],
-          ['Male',2876]
+  function drawChart1() {
+    var data1 = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Female',3819],
+      ['Male',4283]
 
-        ]);
+    ]);
 
-        var options3 = {
-          title: 'Emory University Undergraduate Gender',
-          pieHole: 0.4,
-          colors:['#f2be54', '87aeb4']
-        };
+    var options1 = {
+      title: 'Columbia University Undergraduate Gender',
+      pieHole: 0.4,
+      colors:['#f2be54', '87aeb4']
+    };
 
-        var chart3 = new google.visualization.PieChart(document.getElementById('datagraph3'));
-        chart3.draw(data3, options3);
-      }
+    var chart1 = new google.visualization.PieChart(document.getElementById('datagraph1'));
+    chart1.draw(data1, options1);
+  }
 
 
 
+
+
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart9);
+
+  function drawChart9() {
+    var data9 = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['African American', 619],
+      ['Asian',1441],
+      ['Hispanic/Latino',1068],
+      ['White',3077],
+      ['Ethnicity Unknown',636]
+
+    ]);
+
+    var options9= {
+      title: 'Columbia University Diversity',
+      pieHole: 0.4,
+      colors:['#f2be54', '#153e5c','#6a9ae8','#87aeb4','#cdd4ca']
+
+    };
+
+    var chart9 = new google.visualization.PieChart(document.getElementById('datagraph9'));
+    chart9.draw(data9, options9);
+  }
 
 
 
       google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart4);
-
-      function drawChart4() {
-        var data4 = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['African American', 637],
-          ['Asian',1295],
-          ['Hispanic/Latino',545],
-          ['White',2762],
-          ['Ethnicity Unknown',428]
-
-        ]);
-
-        var options4= {
-          title: 'Emory University Diversity',
-          pieHole: 0.4,
-          colors:['#f2be54', '#153e5c','#6a9ae8','#87aeb4','#cdd4ca']
-        };
-
-        var chart4 = new google.visualization.PieChart(document.getElementById('datagraph4'));
-        chart4.draw(data4, options4);
-      }
-
-
-
-      google.charts.load("current", {packages:["corechart"]});
-google.charts.setOnLoadCallback(drawChart5);
+      google.charts.setOnLoadCallback(drawChart5);
 
 
 function drawChart5() {
@@ -211,14 +208,114 @@ function drawChart6() {
   chart6.draw(data6, options6);
 }
 
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart7);
 
-    </script>
- </head>
 
-  <body>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
+function drawChart7() {
+  var data7 = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['Female',9784],
+    ['Male',7640]
 
-    <script>
+  ]);
+
+  var options7 = {
+    title: 'City College of New York Undergraduate Gender',
+    pieHole: 0.4,
+    colors:['#f2be54', '87aeb4']
+  };
+
+  var chart7 = new google.visualization.PieChart(document.getElementById('datagraph7'));
+  chart7.draw(data7, options7);
+}
+
+
+
+
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart8);
+
+function drawChart8() {
+  var data8 = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['African American', 2163],
+    ['Asian',3221],
+    ['Hispanic/Latino',4735],
+    ['White',2004],
+    ['Ethnicity Unknown',238]
+
+  ]);
+
+  var options8 = {
+    title: 'City College of New York Diversity',
+    pieHole: 0.4,
+    colors:['#f2be54', '#153e5c','#6a9ae8','#87aeb4','#cdd4ca']
+  };
+
+  var chart8 = new google.visualization.PieChart(document.getElementById('datagraph8'));
+  chart8.draw(data8, options8);
+}
+
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart3);
+
+
+function drawChart3() {
+var data3 = google.visualization.arrayToDataTable([
+['Task', 'Hours per Day'],
+['Female',1036],
+['Male',1105]
+
+]);
+
+var options3 = {
+title: 'Babson College Undergraduate Gender',
+pieHole: 0.4,
+colors:['#f2be54', '87aeb4']
+};
+
+var chart3 = new google.visualization.PieChart(document.getElementById('datagraph3'));
+chart3.draw(data3, options3);
+}
+
+
+
+
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart4);
+
+function drawChart4() {
+var data4 = google.visualization.arrayToDataTable([
+['Task', 'Hours per Day'],
+['African American', 104],
+['Asian',265],
+['Hispanic/Latino',209],
+['White',822],
+['Ethnicity Unknown',178]
+
+]);
+
+var options4 = {
+title: 'Babson College Diversity',
+pieHole: 0.4,
+colors:['#f2be54', '#153e5c','#6a9ae8','#87aeb4','#cdd4ca']
+};
+
+var chart4 = new google.visualization.PieChart(document.getElementById('datagraph4'));
+chart4.draw(data4, options4);
+}
+
+     </script>
+  </head>
+
+   <body>
+     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
+
+     <script>
     function openNav() {
         document.getElementById("mySidenav").style.width = "100%";
     }
@@ -226,7 +323,7 @@ function drawChart6() {
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
     }
-  </script>
+   </script>
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn"onclick="closeNav()">&times;</a>
@@ -242,10 +339,14 @@ function drawChart6() {
     <div class="center">
     <div id="donutchart" style="width: 900px; height: 500px;"></div>
     <div id="datagraph2" style="width: 900px; height: 500px;"></div>
-    <div id="datagraph3" style="width: 900px; height: 500px;"></div>
-    <div id="datagraph4" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph1" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph9" style="width: 900px; height: 500px;"></div>
     <div id="datagraph5" style="width: 900px; height: 500px;"></div>
     <div id="datagraph6" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph7" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph8" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph3" style="width: 900px; height: 500px;"></div>
+   <div id="datagraph4" style="width: 900px; height: 500px;"></div>
 </div>
 
   </body>
