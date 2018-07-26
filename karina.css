@@ -62,3 +62,8 @@ a:visited{
 strong{
   color:#cdd4ca;
 }
+
+
+#mapid {
+  height: 180px;
+}
