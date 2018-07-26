@@ -319,6 +319,115 @@ var chart4 = new google.visualization.PieChart(document.getElementById('datagrap
 chart4.draw(data4, options4);
 }
 
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart12);
+
+
+function drawChart12() {
+var data12 = google.visualization.arrayToDataTable([
+['Task', 'Hours per Day'],
+['Female',12810],
+['Male',14012]
+
+]);
+
+var options12= {
+title: 'San Jose State University Undergraduate Gender',
+pieHole: 0.4,
+colors:['#f2be54', '87aeb4']
+};
+
+var chart12 = new google.visualization.PieChart(document.getElementById('datagraph12'));
+chart12.draw(data12, options12);
+}
+
+
+
+
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart13);
+
+function drawChart13() {
+var data13= google.visualization.arrayToDataTable([
+['Task', 'Hours per Day'],
+['African American', 905],
+['Asian',9652],
+['Hispanic/Latino',6843],
+['White',5132],
+['Ethnicity Unknown',2489]
+
+]);
+
+var options13= {
+title: 'San Jose State University Diversity',
+pieHole: 0.4,
+colors:['#f2be54', '#153e5c','#6a9ae8','#87aeb4','#cdd4ca']
+};
+
+var chart13 = new google.visualization.PieChart(document.getElementById('datagraph13'));
+chart13.draw(data13, options13);
+}
+
+
+
+
+
+
+
+
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart10);
+
+
+function drawChart10() {
+var data10 = google.visualization.arrayToDataTable([
+['Task', 'Hours per Day'],
+['Female',14346],
+['Male',11125]
+
+]);
+
+var options10= {
+title: 'Florida Atlantic University Undergraduate Gender',
+pieHole: 0.4,
+colors:['#f2be54', '87aeb4']
+};
+
+var chart10 = new google.visualization.PieChart(document.getElementById('datagraph10'));
+chart10.draw(data10, options10);
+}
+
+
+
+
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart11);
+
+function drawChart11() {
+var data11= google.visualization.arrayToDataTable([
+['Task', 'Hours per Day'],
+['African American', 4923],
+['Asian',1076],
+['Hispanic/Latino',6566],
+['White',11017],
+['Ethnicity Unknown',1177]
+
+]);
+
+var options11= {
+title: 'Florida Atlantic University Diversity',
+pieHole: 0.4,
+colors:['#f2be54', '#153e5c','#6a9ae8','#87aeb4','#cdd4ca']
+};
+
+var chart11 = new google.visualization.PieChart(document.getElementById('datagraph11'));
+chart11.draw(data11, options11);
+}
+
      </script>
   </head>
 
@@ -358,7 +467,11 @@ chart4.draw(data4, options4);
     <div id="datagraph7" style="width: 900px; height: 500px;"></div>
     <div id="datagraph8" style="width: 900px; height: 500px;"></div>
     <div id="datagraph3" style="width: 900px; height: 500px;"></div>
-   <div id="datagraph4" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph4" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph10" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph11" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph12" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph13" style="width: 900px; height: 500px;"></div>
 </div>
 
   </body>
