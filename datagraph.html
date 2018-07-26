@@ -162,9 +162,63 @@
           colors:['#f2be54', '#87aeb4','#cdd4ca','#191a1d']
         };
 
-        var chart2 = new google.visualization.PieChart(document.getElementById('datagraph3'));
-        chart2.draw(data3, options3);
+        var chart3 = new google.visualization.PieChart(document.getElementById('datagraph3'));
+        chart3.draw(data3, options3);
       }
+
+
+
+      google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart5);
+
+
+function drawChart5() {
+  var data5 = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['Female',7577],
+    ['Male',6989]
+
+  ]);
+
+  var options5 = {
+    title: 'Cornell University Undergraduate Gender',
+    pieHole: 0.4,
+    colors:['#f2be54', '87aeb4']
+  };
+
+  var chart5 = new google.visualization.PieChart(document.getElementById('datagraph5'));
+  chart5.draw(data5, options5);
+}
+
+
+
+
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart6);
+
+function drawChart6() {
+  var data6 = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['African American', 862],
+    ['Asian',2575],
+    ['Hispanic/Latino',1729],
+    ['White',5830],
+    ['Ethnicity Unknown',1807]
+
+  ]);
+
+  var options6 = {
+    title: 'Cornell University Diversity',
+    pieHole: 0.4,
+    colors:['#f2be54', '#87aeb4','#cdd4ca','#153e5c','#6a9ae8']
+  };
+
+  var chart6 = new google.visualization.PieChart(document.getElementById('datagraph6'));
+  chart6.draw(data6, options6);
+}
+
+
     </script>
  </head>
 
@@ -197,6 +251,8 @@
     <div id="datagraph1" style="width: 900px; height: 500px;"></div>
     <div id="datagraph2" style="width: 900px; height: 500px;"></div>
     <div id="datagraph3" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph5" style="width: 900px; height: 500px;"></div>
+    <div id="datagraph6" style="width: 900px; height: 500px;"></div>
 </div>
 
   </body>
