@@ -71,5 +71,10 @@ strong{
 #title4{
   font-family: 'Abril Fatface', cursive;
   font-size: 50px;
+}
+
+.icons{
+  margin-left: auto;
+  width:10%;
 
 }
