@@ -3,9 +3,12 @@
   <head>
 
     <link rel="stylesheet" href="karina.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster+Two|Unica+One" rel="stylesheet">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton|Poiret+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -60,7 +63,85 @@ body {
           .sidenav {padding-top: 15px;}
           .sidenav a {font-size: 15px;}
         }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            background-color: #cdd4ca;
+            color:#153e5c;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+          }
+
+      #myBtn:hover {
+        background-color: #cdd4ca;
+        }
+
 </style>
+
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn"onclick="closeNav()">&times;</a>
+    <a href="finalproject.html"> Home</a>
+    <a href="scholarships.html">Scholarships</a>
+    <a href="womenInCS.html">Women in CS</a>
+    <a href="datagraph.html">College</a>
+    <a href="encouragement.html">Encouragement</a>
+    <a href="creators.html">Creators</a>
+    <a href="FAQ.html">FAQ</a>
+  </div>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
+
+  <script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <!-- <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
+  <div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible when the user starts to scroll the page.</div> -->
+
+  <script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+
+  </script>
+
+  <div id="title3">
+  <h1><center>Most Diverse Colleges</center></h1>
+</div>
+
+
+
     <script type="text/javascript">
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart);
@@ -482,33 +563,6 @@ chart15.draw(data15, options15);
 }
 
      </script>
-  </head>
-
-   <body>
-
-         <div id="mySidenav" class="sidenav">
-           <a href="javascript:void(0)" class="closebtn"onclick="closeNav()">&times;</a>
-           <a href="finalproject.html"> Home</a>
-           <a href="scholarships.html">Scholarships</a>
-           <a href="womenInCS.html">Women in CS</a>
-           <a href="datagraph.html">College</a>
-           <a href="encouragement.html">Encouragement</a>
-           <a href="creators.html">Creators</a>
-           <a href="FAQ.html">FAQ</a>
-           <a href="studentlocos.html">Student Help Center</a>
-         </div>
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
-
-     <script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-   </script>
-
 
     <div class="center">
     <div id="donutchart" style="width: 900px; height: 500px;"></div>
