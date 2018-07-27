@@ -76,6 +76,12 @@ strong{
 }
 
 .icons{
-  margin-left: 300px;
+  margin-left: 100px;
+  /* float:left; */
   width: 10%
+}
+
+.defs{
+  margin-left: 200px;
+  /* float:right; */
 }
