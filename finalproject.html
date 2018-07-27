@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton|Poiret+One" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
     <style>
@@ -51,13 +52,32 @@
         color: #f2be54;
       }
 
+      .topnav .search-container {
+        float: right;
+      }
+
       .topnav input[type=text] {
         float: right;
         padding: 6px;
         margin-top: 8px;
         margin-right: 16px;
         border: none;
-        font-size: 19px;
+        font-size: 15px;
+      }
+
+      .topnav .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .topnav .search-container button:hover {
+        background: #ccc;
       }
 
       @media screen and (max-width: 600px) {
@@ -131,7 +151,11 @@
         <a href="creators.html">Creators</a>
         <a href="FAQ.html">FAQ</a>
         <a href="studentlocos.html">Student Help Center</a>
-        <input type="text" placeholder="Search..">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
       </div>
 
       <!-- <div id="mySidenav" class="sidenav">
