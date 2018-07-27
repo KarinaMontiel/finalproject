@@ -51,8 +51,12 @@
     margin-right: auto;
     width: 20%;
 }
-#redsection{
+#title{
   font-family: 'Abril Fatface', cursive;
+}
+
+
+#redsection{
   font-color:#87aeb4;
   font-size:30px;
 }
