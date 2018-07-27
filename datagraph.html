@@ -3,7 +3,7 @@
   <head>
 
     <link rel="stylesheet" href="karina.css">
-    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster+Two|Unica+One" rel="stylesheet">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
@@ -13,7 +13,13 @@
 
 
 <style>
-
+.center {
+    display: block;
+    margin-left: 250px;
+    /* margin-right: auto; */
+    /* note!! marivi removed the line above and changed margin-left:auto to margin-left:20px */
+    width: 20%;
+}
 body {
   font-family: 'Poiret One', cursive;
   color: #f2be54;
@@ -84,6 +90,11 @@ body {
         background-color: #cdd4ca;
         }
 
+      #donutchart_title {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
 </style>
 
 </head>
@@ -145,6 +156,60 @@ body {
     <script type="text/javascript">
 
 
+var first_title = "Bryn Mawr College";
+var first_description = "";
+var first_pic;
+
+
+var first_title = "Bryn Mawr College";
+var first_description = "";
+var first_pic;
+
+
+var first_title = "Bryn Mawr College";
+var first_description = "";
+var first_pic;
+
+
+var first_title = "Bryn Mawr College";
+var first_description = "";
+var first_pic;
+
+
+var first_title = "Bryn Mawr College";
+var first_description = "";
+var first_pic;
+
+
+
+
+var first_title = "Bryn Mawr College";
+var first_description = "";
+var first_pic;
+
+
+
+
+var first_title = "Bryn Mawr College";
+var first_description = "";
+var first_pic;
+
+
+
+
+var first_title = "Bryn Mawr College";
+var first_description = "";
+var first_pic;
+
+
+
+
+
+var first_title8 = "Bryn Mawr College";
+var first_description8= "";
+var first_pic;
+
+
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart);
 
@@ -164,6 +229,9 @@ body {
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        document.getElementById('donutchart_title').innerHTML = first_title;
+        document.getElementById('donutchart_descr').innerHTML = first_description;
+
         chart.draw(data, options);
       }
 
@@ -567,24 +635,53 @@ chart15.draw(data15, options15);
 
 
 
-    <div class="center">
+        <div id='donutchart_title'></div>
+        <div id='donutchart_descr'></div>
+        <div class="center">
     <div id="donutchart" style="width: 900px; height: 500px;"></div>
     <div id="datagraph2" style="width: 900px; height: 500px;"></div>
+  </div>
+      <div id='donutchart_title'></div>
+      <div id='donutchart_descr'></div>
+      <div class="center">
     <div id="datagraph3" style="width: 900px; height: 500px;"></div>
     <div id="datagraph4" style="width: 900px; height: 500px;"></div>
+  </div>
+      <div id='donutchart_title'></div>
+      <div id='donutchart_descr'></div>
+      <div class="center">
     <div id="datagraph1" style="width: 900px; height: 500px;"></div>
     <div id="datagraph9" style="width: 900px; height: 500px;"></div>
+  </div>
+      <div id='donutchart_title'></div>
+      <div id='donutchart_descr'></div>
+      <div class="center">
     <div id="datagraph5" style="width: 900px; height: 500px;"></div>
     <div id="datagraph6" style="width: 900px; height: 500px;"></div>
+  </div>
+      <div id='donutchart_title'></div>
+      <div id='donutchart_descr'></div>
+      <div class="center">
     <div id="datagraph7" style="width: 900px; height: 500px;"></div>
     <div id="datagraph8" style="width: 900px; height: 500px;"></div>
+  </div>
+      <div id='donutchart_title'></div>
+      <div id='donutchart_descr'></div>
+      <div class="center">
     <div id="datagraph12" style="width: 900px; height: 500px;"></div>
     <div id="datagraph13" style="width: 900px; height: 500px;"></div>
+  </div>
+      <div id='donutchart_title'></div>
+      <div id='donutchart_descr'></div>
+      <div class="center">
     <div id="datagraph10" style="width: 900px; height: 500px;"></div>
     <div id="datagraph11" style="width: 900px; height: 500px;"></div>
+  </div>
+      <div id='donutchart_title'></div>
+      <div id='donutchart_descr'></div>
+      <div class="center">
     <div id="datagraph14" style="width: 900px; height: 500px;"></div>
     <div id="datagraph15" style="width: 900px; height: 500px;"></div>
-
 </div>
 
 <div class="header3">
