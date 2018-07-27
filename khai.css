@@ -66,11 +66,44 @@ ul {
   font-size:48px;
 }
 
+#quotes{
+    font-family: 'Merienda', cursive;
+    color:#92e2e9;
+    font-size:30px;
+}
+
+#title2{
+  font-family: 'Abril Fatface', cursive;
+  font-size:48px;
+}
 
 #redsection{
-  font-color:#87aeb4;
+  font-color:#92e2e9;
   font-size:30px;
 }
+#pinksection{
+  color:#b2ada9;
+}
+#orangesection{
+  color:#b2ada9;
+}
+#yellowsection{
+  color:#b2ada9;
+}
+#brownsection{
+  color:#b2ada9;
+}
+#blacksection{
+  color:#b2ada9;
+}
+#purplesection{
+  color:#b2ada9;
+}
+#lightbluesection{
+  color:#b2ada9;
+}
+
+
 
 /* tell the container's children to float left: */
 /* .float-nicoledominguez > * {
