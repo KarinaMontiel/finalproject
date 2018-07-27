@@ -51,8 +51,19 @@
     margin-right: auto;
     width: 20%;
 }
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
 #title{
   font-family: 'Abril Fatface', cursive;
+}
+
+#title1{
+  font-family: 'Abril Fatface', cursive;
+  font-size:48px;
 }
 
 
