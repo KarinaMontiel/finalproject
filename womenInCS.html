@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster+Two|Unica+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
@@ -9,58 +11,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <style>
 
-<style>
-
-body {
-  font-family: 'Poiret One', cursive;
-  color: #f2be54;
-  font-size: 40px;
-  font-style: normal;
-  background-color: #153e5c;
-}
-
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #153e5c;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-        text-align: center;
-    }
-
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 50px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
+      body {
+        font-family: 'Poiret One', cursive;
         color: #f2be54;
-
+        font-size: 40px;
+        font-style: normal;
+        background-color: #153e5c;
       }
+
+      .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #153e5c;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+          text-align: center;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 50px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            color: #f2be54;
+          }
 
         .sidenav a:hover{
             color: #f1f1f1;
-        }
+          }
 
-      .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
+        .sidenav .closebtn {
+              position: absolute;
+              top: 0;
+              right: 25px;
+              font-size: 36px;
+              margin-left: 50px;
+            }
 
-      @media screen and (max-height: 450px) {
-          .sidenav {padding-top: 15px;}
-          .sidenav a {font-size: 15px;}
-        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 15px;}
+          }
 
         #myBtn {
             display: none;
@@ -78,118 +78,154 @@ body {
             border-radius: 4px;
           }
 
-      #myBtn:hover {
-        background-color: #cdd4ca;
-}
-</style>
-  </head>
-  <body>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn"onclick="closeNav()">&times;</a>
-      <a href="finalproject.html"> Home</a>
-      <a href="scholarships.html">Scholarships</a>
-      <a href="womenInCS.html">Women in CS</a>
-      <a href="datagraph.html">College</a>
-      <a href="encouragement.html">Encouragement</a>
-      <a href="creators.html">Creators</a>
-      <a href="FAQ.html">FAQ</a>
-    </div>
+        #myBtn:hover {
+          background-color: #cdd4ca;
+        }
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
+      </style>
 
-    <script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-    }
+</head>
 
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-</script>
+    <body>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn"onclick="closeNav()">&times;</a>
+        <a href="finalproject.html"> Home</a>
+        <a href="scholarships.html">Scholarships</a>
+        <a href="womenInCS.html">Women in CS</a>
+        <a href="datagraph.html">College</a>
+        <a href="encouragement.html">Encouragement</a>
+        <a href="creators.html">Creators</a>
+        <a href="FAQ.html">FAQ</a>
+      </div>
+
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
+
+      <script>
+
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+        }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+
+      </script>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <!-- <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
     <div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible when the user starts to scroll the page.</div> -->
 
-    <script>
+      <script>
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+      window.onscroll = function() {scrollFunction()};
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
-        }
-    }
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("myBtn").style.display = "block";
+          } else {
+              document.getElementById("myBtn").style.display = "none";
+          }
+      }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
 
-    </script>
-
-
+      </script>
 
     <div class="mainTitle">
-    <h1><center>WOMEN IN CS</center></h1>
-  </div>
-    <div id="womenInCS">
-    <p>Computer science is a field of study that not many girls are introduced to at a young age. This could be a reason why there is such a large gender gap in this industry. It has also been proven that many girls find an interest in the field, but they dont follow through with it leaving a huge dent in the diversity amongst men in women in the workplace. This page has been created to help push students to further their passion for CS or just introduce them to the idea and provide them with resources to look further into this new found idea.</p>
-    <hr></hr><p> Below some graphs have been created to demonstrate the gender gap on women in tech and shows the demographics of these companies.</p>
-    <p><center><u>Percentages of Women in Tech at Major Companies and Average Demographics from Each Company</u></center></p>
-<div class="row">
-  <div class="column">
-    <img src="1.jpg" alt="Graph of Gender Gap in Tech" style= "width:100%" class="center">
-  </div>
-  <div class="column">
-    <img src="2.jpg" alt="Graph of Gender Gap in Tech" style="width:100%" class="center">
-  </div>
 
-</div><hr></hr>
-    <p>Computer science is a way for people to express themselves while also being able to critcally think about the informtion given to them first hand. Many students have asked the question, "What should I major in?". There isn't just one defintion of computer science, so I will describe multiple of the general majors.</p>
-    <br>
+    <h1><center>WOMEN IN CS</center></h1>
+
+    </div>
+
+    <div id="womenInCS">
+
+    <p>Computer science is a field of study that not many girls are introduced to at a young age. This could be a reason why there is such a large gender gap in this industry. It has also been proven that many girls find an interest in the field, but they dont follow through with it leaving a huge dent in the diversity amongst men in women in the workplace. This page has been created to help push students to further their passion for CS or just introduce them to the idea and provide them with resources to look further into this new found idea.</p>
+
+    <hr></hr><p> Below some graphs have been created to demonstrate the gender gap on women in tech and shows the demographics of these companies.</p>
+
+    <p><center><u>Percentages of Women in Tech at Major Companies and Average Demographics from Each Company</u></center></p>
+
+    <div class="row">
+      <div class="column">
+        <img src="1.jpg" alt="Graph of Gender Gap in Tech" style= "width:100%" class="center">
+    </div>
+
+    <div class="column">
+      <img src="2.jpg" alt="Graph of Gender Gap in Tech" style="width:100%" class="center">
+    </div>
+
+    </div><hr></hr>
+
+    <p>Computer science is a way for people to express themselves while also being able to critcally think about the informtion given to them first hand. Many students have asked the question, "What should I major in?". There isn't just one defintion of computer science, so I will describe multiple of the general majors.</p><br>
+
     <div class="header3">
       <p><center><u><a href="https://www.collegechoice.net/rankings/best-computer-science-degree/">Top 5 Universities for Tech</a></u></center></p>
     </div>
-    <p><center>University of California, Berkeley</center></p>
+
+    <p><a href="#UCB">UC Berkeley</a></p>
+    <p><a href="#MIT">Massachusetts Institute of Technology</a></p>
+    <p><a href="CIT">California Institute of Technology</a></p>
+    <p><a href="GIT">Georgia Institute of Technology</a></p>
+    <p><a href="CMU">Carnegie Mellon University</a></p>
+
+    <p id ="UCB"><center>University of California, Berkeley</center></p>
     <img src="UCB.jpg" alt="Picture of UC Berkeley" style= "width:45%" class="center">
     <p><p align="justify"><i>UC Berkeley is one of the oldest research institutions within the UC system.  The university's department of Electrical Engineering and Computer Sciences offers many unique options for it's undergrad students. For ambitious students, UC Berkeley offers a five year Bachelor/Master's program.  For students interested in programming, computer graphics and animation, or careers and computer research, the University of California—Berkeley is the place to be.</i></p>
-    <p><center>Massachusetts Institute of Technology</center></p>
+
+    <p id ="MIT"><center>Massachusetts Institute of Technology</center></p>
     <img src="MIT.jpg" alt="Picture of UC Berkeley" style= "width:45%" class="center">
-    <p><p align="justify"><i>The Massachusetts Institute of Technology (MIT) is a private research institution, in Cambridge, Massachusetts. MIT’s Electrical Engineering and Computer Science (EECS) program is the largest undergrad program at MIT. MIT prepares its students for many careers from software companies to designing video games. If you see yourself working for companies like IBM, Google, or Microsoft, you will substantially increase your chances with a bachelor in computer science from MIT.</i></p>
-    <p><center>California Institute of Technology</center></p>
+    <p><p align="justify"><i>The Massachusetts Institute of Technology (MIT) is a private research institution, in Cambridge, Massachusetts. MIT’s Electrical Engineering and Computer Science (EECS) program is the largest undergrad program at MIT. MIT prepares its students for many careers from software companies to designing video games. If you see yourself working for companies like IBM, Google, or Microsoft, you will substantially increase your chances with a bachelor in computer science from
+    MIT.</i></p>
+
+    <p id ="CIT"><center>California Institute of Technology</center></p>
     <img src="CIT.jpg" alt="Picture of UC Berkeley" style= "width:45%" class="center">
     <p><p align="justify"><i>California Institute of Technology is a world-renowned private university in Pasadena, California. Its Computer Science degree is housed in its Computing + Mathematical Sciences Department (CMS). The CMS Department is among the top-ranked in the United States. The Bachelor in Computer Science at California Institute of Technology gives students mathematical and engineering foundations while also giving students the flexibility in other areas like graphics, databases, robotics, and networking.  Its BSc program prepares students toward becoming faculty at research institutions and to work for organizations like Pixar Animation Studios, Intel, Google, and Facebook.</i></p>
-    <p><center>Georgia Institute of Technology</center></p>
+
+    <p id ="GIT"><center>Georgia Institute of Technology</center></p>
     <img src="GIT.jpg" alt="Picture of UC Berkeley" style= "width:45%" class="center">
     <p><p align="justify"><i>Commonly known as Georgia Tech, The Georgia Institute of Technology was founded in 1885 and is located in the southern city of Atlanta, Georgia. As one of the nation’s top undergrad programs, Georgia Tech’s College of Computing offers a Computer Science degree that gives students a solid foundation in the principles of Computer Science and practical skills in the real world. It’s Bachelor of Science in Computer Science program trains students to be computer specialists, innovators, and problem solvers. Georgia Institute of Technology’s undergraduate program also provides undergrads research opportunities through its Undergraduate Research Opportunities in Computing (UROC) program. The UROC program connects students with potential employers through job fairs. Its spring research symposium also allows students to display their research for cash prizes.</i></p>
-    <p><center>Carnegie Mellon University</center></p>
+
+    <p id ="CMU"><center>Carnegie Mellon University</center></p>
     <img src="CMU.jpg" alt="Picture of UC Berkeley" style= "width:45%" class="center">
     <p><p align="justify"><i>Carnegie Mellon University is a private research institution just three miles from Downtown Pittsburgh, Pennsylvania. Its Computer Science Department is committed to leading in computer science research and education that has real-world impact. Among the qualities that distinguish Carnegie’s Computer Science program is its commitment to diversity. Carnegie Mellon’s percentage of women receiving bachelor’s degrees in computer science doubles the national average at 33%. The
     undergrad program at Carnegie Mellon allows students to dive deep into computer science with the flexibility of taking other courses in the sciences and humanities. If you want to study computer science in an urban environment with plenty of career opportunities, Carnegie Mellon’s BSc program may be just for you.</i></p>
-<hr></hr><div class="header3">
+
+    <hr></hr><div class="header3">
     <p><center><a href="https://www.greatcollegedeals.net/scholarships/computer-programming">Scholarships Dedicated for CS Majors</a></center></p>
-  </div>
-  <p><center>This section is specifically for women interested in majoring in CS. Information on deadlines and summaries of the scholarships will be included.</center></p>
-  <p><p align="left"><i><a href="https://research.adobe.com/scholarship/">Adobe Women in Technology Scholarship</a></i></p>
-  <p>DEADLINE: October 31st</p>
-  <p><p align="left">Adobe Systems Inc., a leading multinational software company in San Jose, funds the Women in Technology Scholarship for $10,000 to support full-time female undergraduates majoring in computer science, programming, computer engineering, or similar technical fields with strong academic merit. The application process involves submitting four brief essays, three references, and an optional 60-second video highlighting students’ IT dreams. Recipients also earn a free Creative Cloud subscription and internship interview.</p>
-  <p><p align="left"><i><a href="http://www.aises.org/scholarships">AISES Intel Scholarship Fund</a></i></p>
-  <p>DEADLINE: May 2nd</p>
-  <p><p align="left">The American Indian Science and Engineering Society (AISES) partnered with Intel to provide $5,000 undergraduate and $10,000 graduate scholarships annually to full-time students of American Indian, Alaskan Native, or Native Hawaiian heritage. The non-renewable award is reserved for computer science majors, including programming, who attend accredited four-year U.S. institutions with a minimum “B” average. Applying for AISES membership with certification of at least 25 percent Native blood is required.</p>
-  <p><p align="left"><i><a href="https://www.microsoft.com/en-us/diversity/programs/blacks-scholarships.aspx">Blacks at Microsoft Scholarships</a></i></p>
-  <p>DEADLINE: March 1st</p>
-  <p><p align="left">Valued at $5,000 apiece, two Blacks at Microsoft Scholarships are granted yearly by the Washington-based software giant to assist high school seniors of African descent who are pursuing select technology fields, such as computer programming. Eligibility criteria requires being accepted into an accredited bachelor’s program, displaying high-tech skills, carrying a cumulative GPA of 3.3. or better, needing financial aid, and providing a resume of extracurricular activities.</p>
-  <p><p align="left"><i><a href="https://scholarships.uncf.org/Program/Details/27e1c806-66c5-4106-821d-3b35ebf46d33?_ga=1.128121164.1933423047.1471615887">Dell Corporate Scholars Program</a></i></p>
-  <p>DEADLINE: October 2nd</p>
-  <p><p align="left">Administered by the United Negro College Fund (UNCF), the Dell Corporate Scholars Program gifts $4,500 and a paid, 10-week summer internship in Round Rock to minority students pursuing ambitions in technology professions, including computer programming. Eligible Black, Hispanic, American Indian, and Asian applicants must attain at least junior standing at accredited U.S.-based colleges with a cumulative GPA above 3.0. Don’t forget to attach a resume, unofficial transcript, one-page essay, and two recommendations</p>
-  <p><p align="left"><i><a href="https://www.developintelligence.com/scholarships">DevelopIntelligence Scholarship for Promising Programmers</a></i></p>
-  <p>DEADLINE: Septmeber 1st</p>
-  <p><p align="left">Established in 2003 by tech guru Kelby Zorgdrager, DevelopIntelligence (DI) confers its $1,000 Scholarship for Promising Programmers each year to the software industry’s next generation of developers. Suitable applicants must attend an American university full-time, have taken at least one computer science course, exhibit programming skills, possess a major GPA of 3.4 or higher, attach a curriculum vitae, and write a maximum 350-word essay about how technology can resolve real-world problems.</p>
-  </body>
-</head>
+    </div>
+
+    <p><center>This section is specifically for women interested in majoring in CS. Information on deadlines and summaries of the scholarships will be included.</center></p>
+
+    <p><p align="left"><i><a href="https://research.adobe.com/scholarship/">Adobe Women in Technology Scholarship</a></i></p>
+    <p>DEADLINE: October 31st</p>
+    <p><p align="left">Adobe Systems Inc., a leading multinational software company in San Jose, funds the Women in Technology Scholarship for $10,000 to support full-time female undergraduates majoring in computer science, programming, computer engineering, or similar technical fields with strong academic merit. The application process involves submitting four brief essays, three references, and an optional 60-second video highlighting students’ IT dreams. Recipients also earn a free Creative Cloud subscription and internship interview.</p>
+
+    <p><p align="left"><i><a href="http://www.aises.org/scholarships">AISES Intel Scholarship Fund</a></i></p>
+    <p>DEADLINE: May 2nd</p>
+    <p><p align="left">The American Indian Science and Engineering Society (AISES) partnered with Intel to provide $5,000 undergraduate and $10,000 graduate scholarships annually to full-time students of American Indian, Alaskan Native, or Native Hawaiian heritage. The non-renewable award is reserved for computer science majors, including programming, who attend accredited four-year U.S. institutions with a minimum “B” average. Applying for AISES membership with certification of at least 25 percent Native blood is required.</p>
+
+    <p><p align="left"><i><a href="https://www.microsoft.com/en-us/diversity/programs/blacks-scholarships.aspx">Blacks at Microsoft Scholarships</a></i></p>
+    <p>DEADLINE: March 1st</p>
+    <p><p align="left">Valued at $5,000 apiece, two Blacks at Microsoft Scholarships are granted yearly by the Washington-based software giant to assist high school seniors of African descent who are pursuing select technology fields, such as computer programming. Eligibility criteria requires being accepted into an accredited bachelor’s program, displaying high-tech skills, carrying a cumulative GPA of 3.3. or better, needing financial aid, and providing a resume of extracurricular activities.</p>
+
+    <p><p align="left"><i><a href="https://scholarships.uncf.org/Program/Details/27e1c806-66c5-4106-821d-3b35ebf46d33?_ga=1.128121164.1933423047.1471615887">Dell Corporate Scholars Program</a></i></p>
+    <p>DEADLINE: October 2nd</p>
+    <p><p align="left">Administered by the United Negro College Fund (UNCF), the Dell Corporate Scholars Program gifts $4,500 and a paid, 10-week summer internship in Round Rock to minority students pursuing ambitions in technology professions, including computer programming. Eligible Black, Hispanic, American Indian, and Asian applicants must attain at least junior standing at accredited U.S.-based colleges with a cumulative GPA above 3.0. Don’t forget to attach a resume, unofficial transcript, one-page essay, and two recommendations</p>
+
+    <p><p align="left"><i><a href="https://www.developintelligence.com/scholarships">DevelopIntelligence Scholarship for Promising Programmers</a></i></p>
+    <p>DEADLINE: Septmeber 1st</p>
+    <p><p align="left">Established in 2003 by tech guru Kelby Zorgdrager, DevelopIntelligence (DI) confers its $1,000 Scholarship for Promising Programmers each year to the software industry’s next generation of developers. Suitable applicants must attend an American university full-time, have taken at least one computer science course, exhibit programming skills, possess a major GPA of 3.4 or higher, attach a curriculum vitae, and write a maximum 350-word essay about how technology can resolve
+    real-world problems.</p>
+
+    </body>
+
+  </head>
+  
 </html>
