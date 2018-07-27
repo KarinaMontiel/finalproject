@@ -152,62 +152,55 @@ body {
 </div>
 
 
-
+<div id="BrynImage"><img src="brynMawr.jpg"></div>
     <script type="text/javascript">
 
 
 var first_title = "Bryn Mawr College";
-var first_description = "";
-var first_pic;
+var first_description = "Bryn Mawr College is located in Bryn Mawr, Pennsylvania and it's an all women liberal arts college. This college is known for being the first women college to offer graduate education through PHD.";
+var first_pic= document.getElementById("BrynImage");
 
 
-var first_title = "Bryn Mawr College";
-var first_description = "";
-var first_pic;
+var first_title7 = "City College of New York";
+var first_description7 = "";
+var first_pic7;
 
 
-var first_title = "Bryn Mawr College";
-var first_description = "";
-var first_pic;
+var first_title1 = "Columbia University";
+var first_description1 = "";
+var first_pic1;
 
 
-var first_title = "Bryn Mawr College";
-var first_description = "";
-var first_pic;
+var first_title2 = "Cornell UNiversity";
+var first_description2 = "";
+var first_pic2;
 
 
-var first_title = "Bryn Mawr College";
-var first_description = "";
-var first_pic;
-
-
-
-
-var first_title = "Bryn Mawr College";
-var first_description = "";
-var first_pic;
+var first_title3 = "Babson College";
+var first_description3 = "";
+var first_pic3;
 
 
 
 
-var first_title = "Bryn Mawr College";
-var first_description = "";
-var first_pic;
+var first_title4 = "San Jose State University";
+var first_description4 = "";
+var first_pic4;
 
 
 
-
-var first_title = "Bryn Mawr College";
-var first_description = "";
-var first_pic;
-
+var first_title5 = "Florida Atlantic Univeristy";
+var first_description5 = "";
+var first_pic5;
 
 
 
+var first_title6 = "Emory University";
+var first_description6 = "";
+var first_pic6;
 
-var first_title8 = "Bryn Mawr College";
-var first_description8= "";
-var first_pic;
+
+
 
 
       google.charts.load("current", {packages:["corechart"]});
@@ -231,7 +224,6 @@ var first_pic;
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         document.getElementById('donutchart_title').innerHTML = first_title;
         document.getElementById('donutchart_descr').innerHTML = first_description;
-
         chart.draw(data, options);
       }
 
@@ -285,6 +277,8 @@ var first_pic;
     };
 
     var chart1 = new google.visualization.PieChart(document.getElementById('datagraph1'));
+    document.getElementById('datagraph1_title').innerHTML = first_title1;
+    document.getElementById('datagraph1_descr').innerHTML = first_description1;
     chart1.draw(data1, options1);
   }
 
@@ -647,8 +641,8 @@ chart15.draw(data15, options15);
     <div id="datagraph3" style="width: 900px; height: 500px;"></div>
     <div id="datagraph4" style="width: 900px; height: 500px;"></div>
   </div>
-      <div id='donutchart_title'></div>
-      <div id='donutchart_descr'></div>
+      <div id='datagraph1_title'></div>
+      <div id='datagraph1_descr'></div>
       <div class="center">
     <div id="datagraph1" style="width: 900px; height: 500px;"></div>
     <div id="datagraph9" style="width: 900px; height: 500px;"></div>
