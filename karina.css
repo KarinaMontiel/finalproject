@@ -3,7 +3,7 @@
 }
 
 #title2{
-  font-family: 'Chonburi', cursive;
+  font-family: 'Abril Fatface', cursive;
   color:#f2be54;
 
 }
@@ -15,7 +15,7 @@
 #bios{
   font-family: 'Cinzel Decorative', cursive;
   color:#f2be54;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 html{
@@ -73,4 +73,9 @@ strong{
   font-family: 'Abril Fatface', cursive;
   font-size: 50px;
 
+}
+
+.icons{
+  margin-left: 300px;
+  width: 10%
 }
