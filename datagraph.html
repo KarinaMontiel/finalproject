@@ -20,8 +20,7 @@
       function drawVisualization() {
         var columnChart = new google.visualization.ChartWrapper({
           chartType: 'ColumnChart',
-          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1VwbYufmDPjvOT
-/edit#gid=0',
+          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1VwbYufmDPjvOT/edit#gid=0',
           //query: 'select * where `Current Value`< 15000',
           options: {
           'title': 'Kaushik Profile',
@@ -324,8 +323,11 @@ body {
               var options = {
                 title: 'Bryn Mawr College Undergraduate Gender',
                 pieHole: 0.4,
-                colors:['#f2be54', '87aeb4']
+                colors:['#f2be54', '87aeb4'],
+                height:400,
+                width:500
               };
+
 
               var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
               document.getElementById('donutchart_title').innerHTML = first_title;
@@ -349,7 +351,10 @@ body {
               var options2 = {
                 title: 'Bryn Mawr College Diversity',
                 pieHole: 0.4,
-                colors:['#f2be54', '#153e5c','#6a9ae8','#87aeb4','#cdd4ca']
+                colors:['#f2be54', '#153e5c','#6a9ae8','#87aeb4','#cdd4ca'],
+                class: center,
+                height:400,
+                width:500
               };
 
               var chart2 = new google.visualization.PieChart(document.getElementById('datagraph2'));
@@ -640,7 +645,9 @@ body {
       var options14= {
       title: 'Emory University Undergraduate Gender',
       pieHole: 0.4,
-      colors:['#f2be54', '87aeb4']
+      colors:['#f2be54', '87aeb4'],
+      height:400,
+      width:400
       };
 
       var chart14 = new google.visualization.PieChart(document.getElementById('datagraph14'));
@@ -665,12 +672,15 @@ body {
       var options15= {
       title: 'Emory University Diversity',
       pieHole: 0.4,
-      colors:['#f2be54', '#153e5c','#6a9ae8','#87aeb4','#cdd4ca']
+      colors:['#f2be54', '#153e5c','#6a9ae8','#87aeb4','#cdd4ca'],
+      height:400,
+      width:400
       };
 
       var chart15= new google.visualization.PieChart(document.getElementById('datagraph15'));
       chart15.draw(data15, options15);
       }
+
 
            </script>
 
@@ -678,7 +688,15 @@ body {
               <div id='donutchart_descr'></div>
               <div id="BrynImage">
               <div id="center">
-              <center><img src="brynMawr.jpg" style= "width:75%"></center></div>
+              <center><img src="brynMawr.jpg" style= "width:50%"></center></div>
+              <table class="columns">
+                <tr>
+                  <td><div id='donutchart' style = "border : 1px solid
+                    #ccc"></div></td>
+                  <td><div id= 'datagraph2' style = "border : 1px solid
+                     #ccc"></div></td>
+                   </tr>
+               </table>
               <div class="center">
               <div id="donutchart" style="width: 500px; height: 300px;"></div>
               <div id="datagraph2" style="width: 500px; height: 300px;"></div>

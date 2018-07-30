@@ -108,6 +108,9 @@ a:visited{
       display: flex;
   }
 
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+
+
 .header2{
   font-family: 'Dosis', sans-serif;
   font-size: 60px;
