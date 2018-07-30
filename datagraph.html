@@ -9,6 +9,59 @@
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton|Poiret+One" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1');
+      google.setOnLoadCallback(drawVisualization);
+
+
+    // Code for Bar chart
+
+      function drawVisualization() {
+        var columnChart = new google.visualization.ChartWrapper({
+          chartType: 'ColumnChart',
+          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1VwbYufmDPjvOT
+/edit#gid=0',
+          //query: 'select * where `Current Value`< 15000',
+          options: {
+          'title': 'Kaushik Profile',
+          legend: { position: 'top' }
+          },
+          view:{"columns": [0,1,2]},
+          containerId: 'col_chart'
+        });
+        columnChart.draw()
+
+      // Code for Invested pie chart
+
+         var investedpieChart = new google.visualization.ChartWrapper({
+          chartType: 'PieChart',
+          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1VwoAYwVgPvOT1q2P-GQyzQ/edit#gid=0',
+          options: {
+          'title': 'Invested Amount', is3D: true},
+          view:{"columns": [0,1]},
+          containerId: 'investedpie_chart'
+        });
+        investedpieChart.draw()
+
+        // Code for Current  pie chart
+
+         var currentpieChart = new google.visualization.ChartWrapper({
+          chartType: 'PieChart',
+          dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1VwoAufmDPjvOT1q2P-GQyzQ/edit#gid=0',
+          options: {
+          'title': 'Invested Amount', is3D: true},
+          view:{"columns": [0,2]},
+          containerId: 'currentpie_chart'
+        });
+        currentpieChart.draw()
+
+
+
+        // No query callback handler needed!
+      }
+    </script>
+
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
 
@@ -623,10 +676,12 @@ body {
 
             <center><div id= 'donutchart_title'> </div></center>
               <div id='donutchart_descr'></div>
-              <div id="BrynImage"><center><img src="brynMawr.jpg" style= "width:50%"><center></div>
+              <div id="BrynImage">
+              <div id="center">
+              <center><img src="brynMawr.jpg" style= "width:75%"></center></div>
               <div class="center">
-              <div id="donutchart" style="width: 900px; height: 500px;"></div>
-              <div id="datagraph2" style="width: 900px; height: 500px;"></div>
+              <div id="donutchart" style="width: 500px; height: 300px;"></div>
+              <div id="datagraph2" style="width: 500px; height: 300px;"></div>
             </div>
 
             <center><div id='datagraph3_title'></div></center>
