@@ -223,7 +223,7 @@ body {
       var first_pic5= document.getElementById("floridauniversity");
 
       var first_title6 = "Emory University";
-      var first_description6 = "Emory University is located in Atlanta, Georgia. It was established in 1836, it's also a private University. Some of the Majors offered are Business Administration, COmpter Science, COmputer Informatics, Nursing amd many more.";
+      var first_description6 = "Emory University is located in Atlanta, Georgia. It was established in 1836, it's also a private University. Some of the Majors offered are Business Administration, Computer Science, Computer Informatics, Nursing amd many more.";
       var first_pic6= document.getElementById("emoryuniversity");
 
             google.charts.load("current", {packages:["corechart"]});
@@ -293,48 +293,48 @@ body {
           chart1.draw(data1, options1);
         }
 
-var first_title = "Bryn Mawr College";
-var first_description = "Bryn Mawr College is located in Bryn Mawr, Pennsylvania and it's an all women liberal arts college. This college is known for being the first women college to offer graduate education through PHD.";
-var first_pic= document.getElementById("BrynImage");
-
-
-var first_title7 = "City College of New York";
-var first_description7 = "";
-var first_pic7= document.getElementById("citycollege");
-
-
-var first_title1 = "Columbia University";
-var first_description1 = "";
-var first_pic1= document.getElementById("columbiauniversity");
-
-
-var first_title2 = "Cornell University";
-var first_description2 = "";
-var first_pic2= document.getElementById("CornellCampus");
-
-
-var first_title3 = "Babson College";
-var first_description3 = "Babson is located in Wellesley, Massachusetts it's a private business school that was established in 1919. This college mostly focusus on entrepreneuship.Babson College offers 27 areas of study to undergraduates.";
-var first_pic3= document.getElementById("babsoncollege");
-
-
-
-
-var first_title4 = "San Jose State University";
-var first_description4 = "San Jose State University is located in 1 Washington Sq, San Jose. It's the oldest public university on the West Coast. It offers 145 bachelor's and Master's degree with 108 concentrations. Some of the Majors offered are Computer Science, COmputer Engineering, Business Administration and many more.";
-var first_pic4= document.getElementById("sanjoseuniversity");
-
-
-
-var first_title5 = "Florida Atlantic Univeristy";
-var first_description5 = "Florida Atlantic University is located in Boca Raton, Florida. It was opened in 1964 as the first public University in South Florida. It offers more than 170 undergraduates and graduate degrees. The majors offered include public Administration, Social work, Engineering, Computer Science and many more.";
-var first_pic5= document.getElementById("floridauniversity");
-
-
-
-var first_title6 = "Emory University";
-var first_description6 = "Emory University is located in Atlanta, Georgia. It was established in 1836, it's also a private University. Some of the Majors offered are Business Administration, Computer Science, Computer Informatics, Nursing and many more";
-var first_pic6= document.getElementById("emoryuniversity");
+// var first_title = "Bryn Mawr College";
+// var first_description = "Bryn Mawr College is located in Bryn Mawr, Pennsylvania and it's an all women liberal arts college. This college is known for being the first women college to offer graduate education through PHD.";
+// var first_pic= document.getElementById("BrynImage");
+//
+//
+// var first_title7 = "City College of New York";
+// var first_description7 = "";
+// var first_pic7= document.getElementById("citycollege");
+//
+//
+// var first_title1 = "Columbia University";
+// var first_description1 = "";
+// var first_pic1= document.getElementById("columbiauniversity");
+//
+//
+// var first_title2 = "Cornell University";
+// var first_description2 = "";
+// var first_pic2= document.getElementById("CornellCampus");
+//
+//
+// var first_title3 = "Babson College";
+// var first_description3 = "Babson is located in Wellesley, Massachusetts it's a private business school that was established in 1919. This college mostly focusus on entrepreneuship.Babson College offers 27 areas of study to undergraduates.";
+// var first_pic3= document.getElementById("babsoncollege");
+//
+//
+//
+//
+// var first_title4 = "San Jose State University";
+// var first_description4 = "San Jose State University is located in 1 Washington Sq, San Jose. It's the oldest public university on the West Coast. It offers 145 bachelor's and Master's degree with 108 concentrations. Some of the Majors offered are Computer Science, COmputer Engineering, Business Administration and many more.";
+// var first_pic4= document.getElementById("sanjoseuniversity");
+//
+//
+//
+// var first_title5 = "Florida Atlantic Univeristy";
+// var first_description5 = "Florida Atlantic University is located in Boca Raton, Florida. It was opened in 1964 as the first public University in South Florida. It offers more than 170 undergraduates and graduate degrees. The majors offered include public Administration, Social work, Engineering, Computer Science and many more.";
+// var first_pic5= document.getElementById("floridauniversity");
+//
+//
+//
+// var first_title6 = "Emory University";
+// var first_description6 = "Emory University is located in Atlanta, Georgia. It was established in 1836, it's also a private University. Some of the Majors offered are Business Administration, Computer Science, Computer Informatics, Nursing and many more";
+// var first_pic6= document.getElementById("emoryuniversity");
 
         google.charts.load("current", {packages:["corechart"]});
         google.charts.setOnLoadCallback(drawChart9);
@@ -421,6 +421,8 @@ var first_pic6= document.getElementById("emoryuniversity");
         };
 
         var chart7 = new google.visualization.PieChart(document.getElementById('datagraph7'));
+        document.getElementById('datagraph7_title').innerHTML = first_title7;
+        document.getElementById('datagraph7_descr').innerHTML = first_description7;
         chart7.draw(data7, options7);
       }
 
@@ -464,6 +466,8 @@ var first_pic6= document.getElementById("emoryuniversity");
       };
 
       var chart3 = new google.visualization.PieChart(document.getElementById('datagraph3'));
+      document.getElementById('datagraph3_title').innerHTML = first_title3;
+      document.getElementById('datagraph3_descr').innerHTML = first_description3;
       chart3.draw(data3, options3);
       }
 
@@ -507,6 +511,8 @@ var first_pic6= document.getElementById("emoryuniversity");
       };
 
       var chart12 = new google.visualization.PieChart(document.getElementById('datagraph12'));
+      document.getElementById('datagraph12_title').innerHTML = first_title4;
+      document.getElementById('datagraph12_descr').innerHTML = first_description4;
       chart12.draw(data12, options12);
       }
 
@@ -550,6 +556,8 @@ var first_pic6= document.getElementById("emoryuniversity");
       };
 
       var chart10 = new google.visualization.PieChart(document.getElementById('datagraph10'));
+      document.getElementById('datagraph10_title').innerHTML = first_title5;
+      document.getElementById('datagraph10_descr').innerHTML = first_description5;
       chart10.draw(data10, options10);
       }
 
@@ -593,6 +601,8 @@ var first_pic6= document.getElementById("emoryuniversity");
       };
 
       var chart14 = new google.visualization.PieChart(document.getElementById('datagraph14'));
+      document.getElementById('datagraph14_title').innerHTML = first_title6;
+      document.getElementById('datagraph14_descr').innerHTML = first_description6;
       chart14.draw(data14, options14);
       }
 
@@ -629,8 +639,8 @@ var first_pic6= document.getElementById("emoryuniversity");
               <div id="datagraph2" style="width: 900px; height: 500px;"></div>
             </div>
 
-            <div id='donutchart_title'></div>
-              <div id='donutchart_descr'></div>
+            <center><div id='datagraph3_title'></div></center>
+              <div id='datagraph3_descr'></div>
               <div id="babsoncollege"><center><img src="babsoncollege.jpg" style= "width:50%"><center></div>
               <div class="center">
               <div id="datagraph3" style="width: 900px; height: 500px;"></div>
@@ -645,7 +655,7 @@ var first_pic6= document.getElementById("emoryuniversity");
               <div id="datagraph9" style="width: 900px; height: 500px;"></div>
             </div>
 
-            <div id='datagraph5_title'></div>
+          <center>  <div id='datagraph5_title'></div></center>
             <div id='datagraph5_descr'></div>
             <div id="CornellCampus"><center><img src="CornellCampus.jpg" style= "width:50%"><center></div>
             <div class="center">
@@ -653,32 +663,32 @@ var first_pic6= document.getElementById("emoryuniversity");
             <div id="datagraph6" style="width: 900px; height: 500px;"></div>
           </div>
 
-            <div id='donutchart_title'></div>
-              <div id='donutchart_descr'></div>
+          <center><div id='datagraph7_title'></div></center>
+            <div id='datagraph7_descr'></div>
               <div id="citycollege"><center><img src="citycollegeofnewyork.jpg" style= "width:50%"><center></div>
               <div class="center">
               <div id="datagraph7" style="width: 900px; height: 500px;"></div>
               <div id="datagraph8" style="width: 900px; height: 500px;"></div>
             </div>
 
-            <div id='donutchart_title'></div>
-              <div id='donutchart_descr'></div>
+            <center><div id='datagraph12_title'></div></center>
+              <div id='datagraph12_descr'></div>
               <div id="sanjoseuniversity"><center><img src="sanjoseuniversity.jpg" style= "width:50%"><center></div>
               <div class="center">
               <div id="datagraph12" style="width: 900px; height: 500px;"></div>
               <div id="datagraph13" style="width: 900px; height: 500px;"></div>
             </div>
 
-            <div id='donutchart_title'></div>
-              <div id='donutchart_descr'></div>
+            <center><div id='datagraph10_title'></div></center>
+              <div id='datagraph10_descr'></div>
               <div id="floridauniversity"><center><img src="floridauniversity.jpg" style= "width:50%"><center></div>
               <div class="center">
               <div id="datagraph10" style="width: 900px; height: 500px;"></div>
               <div id="datagraph11" style="width: 900px; height: 500px;"></div>
             </div>
 
-            <div id='donutchart_title'></div>
-              <div id='donutchart_descr'></div>
+            <center><div id='datagraph14_title'></div></center>
+              <div id='datagraph14_descr'></div>
               <div id="emoryuniversity"><center><img src="emoryuniversity.jpg" style= "width:50%"><center></div>
               <div class="center">
               <div id="datagraph14" style="width: 900px; height: 500px;"></div>
