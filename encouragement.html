@@ -1,119 +1,70 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <link rel="stylesheet" href="main.css">
-   <link rel="stylesheet" href="khai.css">
-   <link href="https://fonts.googleapis.com/css?family=Monoton|Poiret+One" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Monoton|Poiret+One" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster+Two|Unica+One" rel="stylesheet">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-<style>
-* {box-sizing: border-box;}
-body {
-  margin: 0;
-  font-family: 'Poiret One', cursive;
-}
+  <head>
+     <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="khai.css">
+     <link href="https://fonts.googleapis.com/css?family=Monoton|Poiret+One" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Monoton|Poiret+One" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster+Two|Unica+One" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-.topnav {
-  overflow: hidden;
-  background-color: #153e5c;
-}
+      <style>
+        * {box-sizing: border-box;}
+        body {
+          margin: 0;
+          font-family: 'Poiret One', cursive;
+        }
 
-.topnav a {
-  float: left;
-  display: block;
-  color:#f2be54 ;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 22px;
-}
+        .topnav {
+          overflow: hidden;
+          background-color: #153e5c;
+        }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: #f2be54;
-}
+        .topnav a {
+          float: left;
+          display: block;
+          color:#f2be54 ;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 22px;
+        }
 
-.topnav a.active {
-  background-color: #153e5c;
-  color: #f2be54;
-}
+        .topnav a:hover {
+          background-color: #ddd;
+          color: #f2be54;
+        }
 
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: none;
-  font-size: 19px;
-}
+        .topnav a.active {
+          background-color: #153e5c;
+          color: #f2be54;
+        }
 
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text] {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
+        .topnav input[type=text] {
+          float: right;
+          padding: 6px;
+          margin-top: 8px;
+          margin-right: 16px;
+          border: none;
+          font-size: 19px;
+        }
 
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
-}
-/* body {
-  font-family: 'Poiret One', cursive;
-  color: #f2be54;
-  font-size: 40px;
-  font-style: normal;
-  background-color: #153e5c;
-}
+        @media screen and (max-width: 600px) {
+          .topnav a, .topnav input[type=text] {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+          }
 
-   .sidenav {
-       height: 100%;
-       width: 0;
-       position: fixed;
-       z-index: 1;
-       top: 0;
-       left: 0;
-       background-color: #153e5c;
-       overflow-x: hidden;
-       transition: 0.5s;
-       padding-top: 60px;
-       text-align: center;
-   }
-
-   .sidenav a {
-       padding: 8px 8px 8px 32px;
-       text-decoration: none;
-       font-size: 50px;
-       color: #818181;
-       display: block;
-       transition: 0.3s;
-       color: #f2be54;
-
-     }
-
-       .sidenav a:hover{
-           color: #f1f1f1;
-       }
-
-     .sidenav .closebtn {
-           position: absolute;
-           top: 0;
-           right: 25px;
-           font-size: 36px;
-           margin-left: 50px;
-       }
-
-     @media screen and (max-height: 450px) {
-         .sidenav {padding-top: 15px;}
-         .sidenav a {font-size: 15px;}
-       } */
+          .topnav input[type=text] {
+            border: 1px solid #ccc;
+          }
+        }
 
        #myBtn {
            display: none;
@@ -135,8 +86,11 @@ body {
        background-color: #cdd4ca;
 }
   </style>
+
  </head>
+
  <body>
+
    <div class="topnav">
      <a class="active" href="finalproject.html">Home</a>
      <a href="scholarships.html">Scholarships</a>
@@ -148,35 +102,8 @@ body {
      <a href="studentlocos.html">Student Help Center</a>
      <input type="text" placeholder="Search..">
    </div>
-   <!-- <div id="mySidenav" class="sidenav">
-     <a href="javascript:void(0)" class="closebtn"onclick="closeNav()">&times;</a>
-     <a href="finalproject.html"> Home</a>
-     <a href="scholarships.html">Scholarships</a>
-     <a href="womenInCS.html">Women in CS</a>
-     <a href="datagraph.html">College</a>
-     <a href="encouragement.html">Encouragement</a>
-     <a href="creators.html">Creators</a>
-     <a href="FAQ.html">FAQ</a><a href="studentlocos.html">Student Help Center</a>
-     <a href="studentlocos.html">Student Help Center</a>
-   </div>
-
-   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
-
-   <script>
-   function openNav() {
-       document.getElementById("mySidenav").style.width = "100%";
-   }
-
-   function closeNav() {
-       document.getElementById("mySidenav").style.width = "0";
-   }
-
- </script> -->
 
      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-     <!-- <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
-     <div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible when the user starts to scroll the page.</div> -->
 
      <script>
      // When the user scrolls down 20px from the top of the document, show the button
@@ -199,115 +126,90 @@ body {
      </script>
 
    <div id="bluesection">
- <p>
-    <center>
-      <b>
-        <u id="title1"> Encouragement Quotes </u>
-     </b>
-   </center>
- </p>
-</div>
-<div id="quotes">
- <p> <center> <b> “It doesn’t matter who you are, where you come from. The ability to triumph begins with you. Always.” –Oprah Winfrey </p> </center> </b>
- <p> <center> <b> “Define Goal. Take Action. Stay Focused. Expect Success. Nothing Less.” - Michele Ruiz </p> </center> </b>
- <p> <center> <b> “Intelligence plus character that is the goal of true education.” - MLK </p> </center> </b>
-</div>
- <div class="row">
-    <div class="column">
-      <img src="pushyourself.jpg" class="center" alt="pushyourself" style="width:87%">
-    </div>
-    <div class="column">
-      <img src="neverstop.png" class="center" alt="neverstop" style="width:150%">
-    </div>
-    <div class="column">
-      <img src="difficultroads.jpg" class="center" alt="difficultroads" style="width:58%">
-    </div>
-  </div>
-  <div id="womenintechsection">
-    <p>
-      <center>
-        <b>
-          <u id="title2">
-            Inspirational Women in CS
-          </p>
-        </center>
-       </b>
-      </u>
-    <!-- <img src="nicoledominguez.jpg" class="left" alt="nicoledominguez" style="width:90" "height=89"> -->
-    <div class="clearfix float-nicoledominguez">
-      <img src="nicoledominguez.jpg" class="center" alt="nicoledominguez" style="width:600" height="300">
+     <p><center><b><u id="title1"> Encouragement Quotes </u></b></center></p>
    </div>
 
-       <center id="pinksection"> <b>Nicole Dominguez is an empathetic and curious human. She is passionate about delightful, usable
-       experiences made possible by great reusable and scalable code. Nicole works with HTML, Haml/ERBCSS,
-       Sass, LessPythonDjango,Flask,Javascriptj,Query and Github.
-      </center>
-    </b>
-
-    <div class="clearfix float-MariemeJamme">
-      <img src="MariemeJamme.jpg" class="center" alt="MariemeJamme" style="width:300" height="300">
-    </div>
-
-    <center id="orangesection"> <b>Mariéme Jamme is a Senegalese-born British businesswoman who works extensively across civil society,
-      government and the private sector to promote economic development,good governance and digital inclusion.
-      She is also particularly dedicated to empowering women and girls through science, technology,
-      art, engineering, maths and design (STEAMD).
-    </center>
-  </b>
-
-    <div class="clearfix float-fernandaviegas">
-        <img src="fernandaviegas.jpg" class="center" alt="fernandaviegas" style="width:300" height="300">
-    </div>
-    <center id="yellowsection"> <b>
-      Fernanda Bertini Viégas is a Brazilian scientist and designer, whose work focuses on the
-      social, collaborative and artistic aspects of information visualization.Her artistic visualizations have been
-      exhibited in venues such as the New York Museum of Modern Art, the Boston Institute of Contemporary Art,
-      and the Whitney Museum of American Art.
-    </center>
-  </b>
-
-    <div class="clearfix float-kavita">
-      <img src="kavita.jpg" class="center" alt="kavita" style="width:300" height="300">
-    </div>
-    <center id="brownsection"> <b> Kavita Krishnaswamy is a Ph.D. candidate in Computer Science at the University of Maryland.
-    She is developing several prototype robotic systems that will support transferring, repositioning, and personal care,
-    with a focus on accessible user interfaces for control that are feasible for people with severe disabilities.
-  </center>
-</b>
-
-  <div class="clearfix float-EstherNam">
-  <img src="EstherNam.jpg" class="center" alt="EstherNam" style="width:300" height="300">
+  <div id="quotes">
+   <p> <center> <b> “It doesn’t matter who you are, where you come from. The ability to triumph begins with you. Always.” –Oprah Winfrey </p> </center> </b>
+   <p> <center> <b> “Define Goal. Take Action. Stay Focused. Expect Success. Nothing Less.” - Michele Ruiz </p> </center> </b>
+   <p> <center> <b> “Intelligence plus character that is the goal of true education.” - MLK </p> </center> </b>
   </div>
-  <center id="blacksection"> <b>Esther Nam started the PyLadies meetup group. She taught herself how to code and is
-     now an accomplished software engineer.
-   </center>
- </b>
 
-<div class="clearfix float-kimswift">
-<img src="kimswift.jpg" class="center" alt="kimswift" style="width:300" height="300">
-</div>
-<center id="purplesection"> <b> Kim Swift is an American video game designer best known for her work at Valve with games
-   such as Portal and Left 4 Dead. Swift was featured by Fortune as one of "30 Under 30" influential
-   figures in the video game industry. Swift was described in Mental Floss as one of the most recognized
-   women in the industry.
- </center>
-</b>
- <div class="clearfix float-sisiwei">
- <img src="sisiwei.jpg" class="center" alt="sisiwei" style="width:300" height="300">
- </div>
- <center id="lightbluesection">
-   <b>
-   Sisi Wei is an investigative journalist, designer and developer at ProPublica,
-   where she builds interactive stories that serve the public interest. Currently,
-   Sisi is also researching and developing games for journalism. She has published multiple articles,
-   teaches a course and gives talks on how to use games to tell stories.
-  </center>
-</b>
- </div>
+   <div class="row">
+      <div class="column">
+        <img src="pushyourself.jpg" class="center" alt="pushyourself" style="width:87%">
+      </div>
+      <div class="column">
+        <img src="neverstop.png" class="center" alt="neverstop" style="width:150%">
+      </div>
+      <div class="column">
+        <img src="difficultroads.jpg" class="center" alt="difficultroads" style="width:58%">
+      </div>
+    </div>
 
+    <div id="womenintechsection">
+      <p><center><b><u id="title2">Inspirational Women in CS</p></center></b></u>
+      <!-- <img src="nicoledominguez.jpg" class="left" alt="nicoledominguez" style="width:90" "height=89"> -->
+      <div class="clearfix float-nicoledominguez">
+        <img src="nicoledominguez.jpg" class="center" alt="nicoledominguez" style="width:600" height="300">
+     </div>
 
+   <center id="pinksection"> <b>Nicole Dominguez is an empathetic and curious human. She is passionate about delightful, usable experiences made possible by great reusable and scalable code. Nicole works with HTML, Haml/ERBCSS, Sass, LessPythonDjango,Flask,Javascriptj,Query and Github.</center></b>
 
+      <div class="clearfix float-MariemeJamme">
+        <img src="MariemeJamme.jpg" class="center" alt="MariemeJamme" style="width:300" height="300">
+      </div>
 
+      <center id="orangesection"> <b>Mariéme Jamme is a Senegalese-born British businesswoman who works extensively across civil society,
+        government and the private sector to promote economic development,good governance and digital inclusion.
+        She is also particularly dedicated to empowering women and girls through science, technology,
+        art, engineering, maths and design (STEAMD).</b>
+      </center>
 
- </body>
+      <div class="clearfix float-fernandaviegas">
+          <img src="fernandaviegas.jpg" class="center" alt="fernandaviegas" style="width:300" height="300">
+      </div>
+
+      <center id="yellowsection"> <b>
+        Fernanda Bertini Viégas is a Brazilian scientist and designer, whose work focuses on the
+        social, collaborative and artistic aspects of information visualization.Her artistic visualizations have been
+        exhibited in venues such as the New York Museum of Modern Art, the Boston Institute of Contemporary Art,
+        and the Whitney Museum of American Art.</b>
+      </center>
+
+      <div class="clearfix float-kavita">
+        <img src="kavita.jpg" class="center" alt="kavita" style="width:300" height="300">
+      </div>
+
+      <center id="brownsection"> <b> Kavita Krishnaswamy is a Ph.D. candidate in Computer Science at the University of Maryland.
+      She is developing several prototype robotic systems that will support transferring, repositioning, and personal care,
+      with a focus on accessible user interfaces for control that are feasible for people with severe disabilities.</b>
+    </center>
+
+    <div class="clearfix float-EstherNam">
+    <img src="EstherNam.jpg" class="center" alt="EstherNam" style="width:300" height="300">
+    </div>
+
+    <center id="blacksection"> <b>Esther Nam started the PyLadies meetup group. She taught herself how to code and is
+       now an accomplished software engineer.</b>
+    </center>
+
+    <div class="clearfix float-kimswift">
+    <img src="kimswift.jpg" class="center" alt="kimswift" style="width:300" height="300">
+    </div>
+
+    <center id="purplesection"> <b> Kim Swift is an American video game designer best known for her work at Valve with games
+       such as Portal and Left 4 Dead. Swift was featured by Fortune as one of "30 Under 30" influential
+       figures in the video game industry. Swift was described in Mental Floss as one of the most recognized
+       women in the industry.</b>
+     </center>
+
+     <div class="clearfix float-sisiwei">
+     <img src="sisiwei.jpg" class="center" alt="sisiwei" style="width:300" height="300">
+     </div>
+
+     <center id="lightbluesection"><b>Sisi Wei is an investigative journalist, designer and developer at ProPublica, where she builds interactive stories that serve the public interest. Currently, Sisi is also researching and developing games for journalism. She has published multiple articles, teaches a course and gives talks on how to use games to tell stories.</center></b></div>
+
+   </body>
+   
 </html>
