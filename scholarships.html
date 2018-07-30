@@ -1,306 +1,213 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <link rel="stylesheet" href="main.css">
-   <link rel="stylesheet" href="khai.css">
-   <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Monoton|Poiret+One" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster+Two|Unica+One" rel="stylesheet">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
 
-   <style>
+     <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="khai.css">
+     <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Monoton|Poiret+One" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster+Two|Unica+One" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   * {box-sizing: border-box;}
-   body {
-     margin: 0;
-     font-family: 'Poiret One', cursive;
-   }
+<!--This section is for the top navigation bar-->
+     <style>
 
-   .topnav {
-     overflow: hidden;
-     background-color: #153e5c;
-   }
+       * {box-sizing: border-box;}
 
-   .topnav a {
-     float: left;
-     display: block;
-     color:#f2be54 ;
-     text-align: center;
-     padding: 14px 16px;
-     text-decoration: none;
-     font-size: 22px;
-   }
-
-   .topnav a:hover {
-     background-color: #ddd;
-     color: #f2be54;
-   }
-
-   .topnav a.active {
-     background-color: #153e5c;
-     color: #f2be54;
-   }
-
-   .topnav input[type=text] {
-     float: right;
-     padding: 6px;
-     margin-top: 8px;
-     margin-right: 16px;
-     border: none;
-     font-size: 19px;
-   }
-
-   @media screen and (max-width: 600px) {
-     .topnav a, .topnav input[type=text] {
-       float: none;
-       display: block;
-       text-align: left;
-       width: 100%;
-       margin: 0;
-       padding: 14px;
-     }
-
-     .topnav input[type=text] {
-       border: 1px solid #ccc;
-     }
-   }
-   /* body {
-     font-family: 'Poiret One', cursive;
-     color: #f2be54;
-     font-size: 40px;
-     font-style: normal;
-     background-color: #153e5c;
-   }
-       .sidenav {
-           height: 100%;
-           width: 0;
-           position: fixed;
-           z-index: 1;
-           top: 0;
-           left: 0;
-           background-color: #153e5c;
-           overflow-x: hidden;
-           transition: 0.5s;
-           padding-top: 60px;
-           text-align: center;
+       body {
+         margin: 0;
+         font-family: 'Poiret One', cursive;
        }
 
-       .sidenav a {
-           padding: 8px 8px 8px 32px;
-           text-decoration: none;
-           font-size: 50px;
-           color: #818181;
+       .topnav {
+         overflow: hidden;
+         background-color: #153e5c;
+       }
+
+       .topnav a {
+         float: left;
+         display: block;
+         color:#f2be54 ;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 22px;
+       }
+
+       .topnav a:hover {
+         background-color: #ddd;
+         color: #f2be54;
+       }
+
+       .topnav a.active {
+         background-color: #153e5c;
+         color: #f2be54;
+       }
+
+       .topnav input[type=text] {
+         float: right;
+         padding: 6px;
+         margin-top: 8px;
+         margin-right: 16px;
+         border: none;
+         font-size: 19px;
+       }
+
+       @media screen and (max-width: 600px) {
+         .topnav a, .topnav input[type=text] {
+           float: none;
            display: block;
-           transition: 0.3s;
-           color: #f2be54;
+           text-align: left;
+           width: 100%;
+           margin: 0;
+           padding: 14px;
+         }
 
-           }
+         .topnav input[type=text] {
+           border: 1px solid #ccc;
+         }
+       }
 
-           .sidenav a:hover{
-               color: #f1f1f1;
-           }
+     </style>
 
-         .sidenav .closebtn {
-               position: absolute;
-               top: 0;
-               right: 25px;
-               font-size: 36px;
-               margin-left: 50px;
-           }
+   </head>
 
-         @media screen and (max-height: 450px) {
-             .sidenav {padding-top: 15px;}
-             .sidenav a {font-size: 15px;}
-           } */
-   </style>
-</head>
-<body>
+  <body>
 
-  <div class="topnav">
-    <a class="active" href="finalproject.html">Home</a>
-    <a href="scholarships.html">Scholarships</a>
-    <a href="womenInCS.html">Women in CS</a>
-    <a href="datagraph.html">College</a>
-    <a href="encouragement.html">Encouragement</a>
-    <a href="creators.html">Creators</a>
-    <a href="FAQ.html">FAQ</a>
-    <a href="studentlocos.html">Student Help Center</a>
-    <input type="text" placeholder="Search..">
-  </div>
-
-  <style>
-
-
-  #myBtn {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 30px;
-      z-index: 99;
-      font-size: 20px;
-      border: none;
-      outline: none;
-      background-color: #cdd4ca;
-      color:#153e5c;
-      cursor: pointer;
-      padding: 15px;
-      border-radius: 4px;
-    }
-
-  #myBtn:hover {
-    background-color: #cdd4ca;
-  }
-
-  </style>
-
-  <!-- <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn"onclick="closeNav()">&times;</a>
-    <a href="finalproject.html"> Home</a>
-    <a href="scholarships.html">Scholarships</a>
-    <a href="womenInCS.html">Women in CS</a>
-    <a href="datagraph.html">College</a>
-    <a href="encouragement.html">Encouragement</a>
-    <a href="creators.html">Creators</a>
-    <a href="FAQ.html">FAQ</a>
-    <a href="studentlocos.html">Student Help Center</a>
-  </div>
-
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
-
-  <script>
-  function openNav() {
-      document.getElementById("mySidenav").style.width = "100%";
-  }
-
-  function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-  }
-</script> -->
-
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-<!-- <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
-<div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible when the user starts to scroll the page.</div> -->
-
-<script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-</script>
-
-<p> <center> <b> <u id="title"> Scholarships </b> </u> </center> </p>
-  <div id="redsection">
-<div class="scholarshipsforteens">
-  <p> <center> <u> <b> Apple HBCU Scholars Program: </b> </u> </center> </p>
-</div>
-  <p> <center> Students will receive up to $25,000. Any person of color can apply to this scholarship.
-    <p>
-      <center>
-        <b>
-             Due Date: Mid July
-        </b>
-      </center>
-    </p>
-
-
-<div class="scholarshipsforteens">
-  <p> <center> <b> <u> Hispanic College Fund:  </b> </u> </center> </p>
-</div>
-<p> <center> The Hispanic College Fund and google offer $10,000 scholarships.
-   The applicant must be of Hispanic Heritage.</p> </center>
-   <p>
-     <center>
-       <b>
-            Due Date: Early April
-       </b>
-     </center>
-   </p>
-
-    <div class="scholarshipsforteens">
-<p> <center> <u> <b> GEM Ph.D. Engineering Fellowship:</b> </u> </center> </p>
-<p> <center>The GEM Ph.D. Engineering Fellowship is available to minority students
-   who are pursuing a Ph.D. degree in engineering. You must have an M.S. degree or
-   currently be enrolled in an M.S. engineering degree program with a minimum 3.0 GPA
-   to be considered for this award.  </p> </center>
-</div>
-
-<div class="scholarshipsforteens">
-  <p> <center> <b> <u> National Society of High School Scholars Foundation: </b> </u> </center> </p>
-</div>
-<p> <center> The NSHSS provides STEM scholarships for underrepresented groups in order
-   to help reduce financial barriersfor those with academic and leadership potential and
-  the desire to pursue STEM careers.The Foundation awards this scholarship to high school
-  seniors with a minimum GPA of 3.0 who are pursuing a degree in, or closely related to,
-   one of the following STEM disciplines: </center>
-   <ul>
-  <li> Aeronautical and Astronautical Engineering</li>
-  <li> Biosciences/Pre-med/health-related fields</li>
-  <li> Chemical Engineering</li>
-  <li> Physics</li>
-  <li> Operations Research</li>
-  <li> Oceanography</li>
-  <li> Naval Architecture and Ocean Engineering</li>
-  <li> Mechanical Engineering</li>
-  <li> Mathematics</li>
-  <li> Materials Science and Engineering</li>
-  <li> Information Sciences</li>
-  <li> Geosciences</li>
-  <li> Electrical Engineering</li>
-  <li> Computer and Computational Sciences, including Statistics and Accounting</li>
-  <li> Cognitive, Neural, and Behavioral Sciences</li>
-  <li> Civil Engineering</li>
-  <li>Chemistry</li>
-</ul>
-
-     <center>
-       <b>
-           DUE DATE: EARLY APRIL
-       </b>
-     </center>
-   </p>
-
-<div class="scholarshipsforteens">
-  <p> <center> <b> <u> Women TechMakers </b> </u> </center> </p>
-  <p> <center>Through the Women Techmakers Scholars Program - formerly the Google Anita Borg Memorial Scholarship
-     Program - Google is furthering Dr. Anita Borg’s vision of creating gender equality in the field of computer
-     science by encouraging women to excel in computing and technology and become active leaders and role modelsWomen
-      Techmakers Scholars will each receive $10,000 USD (for students in the US) or $5,000 CAD. To apply for this
-      application you must identify as a female ntend to be enrolled in or accepted as a full-time student in a Bachelors,
-      Masters or PhD program at a university in the United States or Canada for the academic year in the field. </p> </center>
-     <p>
-       <center>
-         <b>
-             DUE DATE: FALL
-         </b>
-       </center>
-     </p>
-
-    <div class="scholarshipsforteens">
-      <center><a href= "https://www.fastweb.com/directory/scholarships-for-hispanic-students">For more Scholarships related to the Hispanic College Fund click here:</a></center>
+    <div class="topnav">
+      <a class="active" href="finalproject.html">Home</a>
+      <a href="scholarships.html">Scholarships</a>
+      <a href="womenInCS.html">Women in CS</a>
+      <a href="datagraph.html">College</a>
+      <a href="encouragement.html">Encouragement</a>
+      <a href="creators.html">Creators</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="studentlocos.html">Student Help Center</a>
+      <input type="text" placeholder="Search..">
     </div>
+
+    <style>
+
+      #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 30px;
+          z-index: 99;
+          font-size: 20px;
+          border: none;
+          outline: none;
+          background-color: #cdd4ca;
+          color:#153e5c;
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 4px;
+        }
+
+      #myBtn:hover {
+        background-color: #cdd4ca;
+      }
+
+    </style>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
+    <div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible when the user starts to scroll the page.</div> -->
+
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("myBtn").style.display = "block";
+          } else {
+              document.getElementById("myBtn").style.display = "none";
+          }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+
+    </script>
+
+    <p> <center> <b> <u id="title"> Scholarships </b> </u> </center> </p>
+
+    <div id="redsection">
+
     <div class="scholarshipsforteens">
-      <center><a href= "https://www.fastweb.com/directory/scholarships-for-african-american-students">For more Scholarships related to Apple HBCU Scholars Program click here:</a></center>
+      <p> <center> <u> <b> Apple HBCU Scholars Program: </b> </u> </center> </p>
     </div>
+
+      <p> <center> Students will receive up to $25,000. Any person of color can apply to this scholarship.</center></p>
+        <p><center><b>Due Date: Mid July</b></center></p>
+
     <div class="scholarshipsforteens">
-      <center><a href= "http://nshssfoundation.org/scholarships/">For more Scholarships related to the National Society of High School Scholars Foundation click here:</a></center>
+      <p> <center> <b> <u> Hispanic College Fund:  </b> </u> </center> </p>
     </div>
+
+      <p> <center> The Hispanic College Fund and google offer $10,000 scholarships.
+         The applicant must be of Hispanic Heritage.</p> </center>
+         <p><center><b>Due Date: Early April</b></center></p>
+
     <div class="scholarshipsforteens">
-      <center><a href= "https://www.scholarships.com/">For Scholarships in general click here:</a></center>
+      <p> <center> <u> <b> GEM Ph.D. Engineering Fellowship:</b> </u> </center> </p>
+        <p> <center>The GEM Ph.D. Engineering Fellowship is available to minority students who are pursuing a Ph.D. degree in engineering. You must have an M.S. degree or currently be enrolled in an M.S. engineering degree program with a minimum 3.0 GPA to be considered for this award.  </p> </center>
     </div>
-</body>
+
+    <div class="scholarshipsforteens">
+      <p> <center> <b> <u> National Society of High School Scholars Foundation: </b> </u> </center> </p>
+    </div>
+
+    <p> <center> The NSHSS provides STEM scholarships for underrepresented groups in order to help reduce financial barriersfor those with academic and leadership potential and the desire to pursue STEM careers.The Foundation awards this scholarship to high school seniors with a minimum GPA of 3.0 who are pursuing a degree in, or closely related to, one of the following STEM disciplines: </center></p>
+      <ul style="list-style: none;">
+        <li> Aeronautical and Astronautical Engineering</li>
+        <li> Biosciences/Pre-med/health-related fields</li>
+        <li> Chemical Engineering</li>
+        <li> Physics</li>
+        <li> Operations Research</li>
+        <li> Oceanography</li>
+        <li> Naval Architecture and Ocean Engineering</li>
+        <li> Mechanical Engineering</li>
+        <li> Mathematics</li>
+        <li> Materials Science and Engineering</li>
+        <li> Information Sciences</li>
+        <li> Geosciences</li>
+        <li> Electrical Engineering</li>
+        <li> Computer and Computational Sciences, including Statistics and Accounting</li>
+        <li> Cognitive, Neural, and Behavioral Sciences</li>
+        <li> Civil Engineering</li>
+        <li>Chemistry</li>
+      </ul>
+    <p><center><b>DUE DATE: EARLY APRIL</b></center></p>
+
+    <div class="scholarshipsforteens">
+      <p> <center> <b> <u> Women TechMakers </b> </u> </center> </p>
+        <p> <center>Through the Women Techmakers Scholars Program - formerly the Google Anita Borg Memorial Scholarship Program - Google is furthering Dr. Anita Borg’s vision of creating gender equality in the field of computer science by encouraging women to excel in computing and technology and become active leaders and role modelsWomen Techmakers Scholars will each receive $10,000 USD (for students in the US) or $5,000 CAD. To apply for this application you must identify as a female ntend to be enrolled in or accepted as a full-time student in a Bachelors, Masters or PhD program at a university in the United States or Canada for the academic year in the field. </p> </center>
+          <p><center><b>DUE DATE: FALL</b></center></p>
+
+        <div class="scholarshipsforteens">
+          <center><a href= "https://www.fastweb.com/directory/scholarships-for-hispanic-students">For more Scholarships related to the Hispanic College Fund click here:</a></center>
+        </div>
+
+        <div class="scholarshipsforteens">
+          <center><a href= "https://www.fastweb.com/directory/scholarships-for-african-american-students">For more Scholarships related to Apple HBCU Scholars Program click here:</a></center>
+        </div>
+
+        <div class="scholarshipsforteens">
+          <center><a href= "http://nshssfoundation.org/scholarships/">For more Scholarships related to the National Society of High School Scholars Foundation click here:</a></center>
+        </div>
+
+        <div class="scholarshipsforteens">
+          <center><a href= "https://www.scholarships.com/">For Scholarships in general click here:</a></center>
+      </div>
+
+  </body>
+  
 </html>
