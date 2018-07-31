@@ -125,3 +125,33 @@ a:visited{
     font-family: 'Abril Fatface', cursive;
     font-size: 40px;
     }
+
+    .fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: right;
+    text-decoration: none;
+    border-radius: 75%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #153e5c;
+    color: white;
+}
+
+.fa-linkedin {
+  background: #153e5c;
+  color: white;
+}
+
+.fa-instagram {
+  background: #153e5c;
+  color: white;
+}
