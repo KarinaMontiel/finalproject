@@ -2,10 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="karina.css">
+    <script src="karina.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster+Two|Unica+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton|Poiret+One" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 
     <style>
@@ -112,6 +114,30 @@
           .sidenav {padding-top: 15px;}
           .sidenav a {font-size: 15px;}
         } */
+
+        .collapsible {
+            background-color:  #87aeb4;
+            color: #f2be54;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+            background-color:  #cdd4ca;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #153e5c;
+        }
+
     </style>
 
   </head>
@@ -160,7 +186,6 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-
       </script>
 
       <div class="topnav">
@@ -218,19 +243,34 @@
         <h3>What are some fun things to do in high school?</h3>
           <p class="answers">
             Totally participate in school activities and have school spirit. I promise you won't regret it. Go to football games, basketball games, swim meets, whatever you can to help root for your team. Also, go to dances such as homecoming and prom or other activities your school hosts. The memories will be priceless. And lastly, get out of your comfort zone and try out for a sport. You will most likely find your passion and create longlasting friendships.</p>
-        <h3>What AP classes should I take?</h3>
-          <p class="answers">
-            It depends on what is offered at your school. At my school they do not offer AP's to freshman, so sophomore year I would reccomend starting with one such as AP World History. Do not take more than you can handle. For instance, my friend his junior year took four out of six AP classes and he was totally stressed. Now if this is something you can handle, go ahead and challenege yourself. Junior year I would reccomend taking any of the following: AP US History, AP Lang, AP Physics, AP Bio, AP Chemistry, AP Spanish, AP Statistics, AP Art, etc. Also, if you recieve free or reduced lunch, you are eligible for a fee waive; talk to your counselor for more information.</p>
+
+            <p></p>
+            <button class="collapsible"><h3>What AP classes should I take?</h3></button>
+            <div class="content answers">
+              <p>
+                It depends on what is offered at your school. At my school they do not offer AP's to freshman, so sophomore year I would reccomend starting with one such as AP World History. Do not take more than you can handle. For instance, my friend his junior year took four out of six AP classes and he was totally stressed. Now if this is something you can handle, go ahead and challenege yourself. Junior year I would reccomend taking any of the following: AP US History, AP Lang, AP Physics, AP Bio, AP Chemistry, AP Spanish, AP Statistics, AP Art, etc. Also, if you recieve free or reduced lunch, you are eligible for a fee waive; talk to your counselor for more information.
+              </p>
+            </div>
+
+
         <h3>When should I take the SAT?</h3>
           <p class="answers">
             Definitely take the PSAT your sophmore year and again your junior year. It will give you a look at how far ahead or behind you are. I would reccomend taking your first SAT in the winter of your junior year and again in the spring. This is so if you aren't comfortable with your score still, you can take it the beginning of your senior year. For practive tips, there are plenty of websites and books you can use for test prep. I have learned that the testprep books teach you how to understand the wording of the question, not how to do it neccessarily.</p>
-        <h3>How can I get ahead in my class?</h3>
-          <p class="answers">
-            Not a lot of people know, but you can most definitely take class at your local community college. Not only will you get high school credit, but you'll recieve college credit. This is a great way to get ahead in high school while also getting ahead in college. I would also join college prep programs such as AVID. These types of programs are known for getting students ahead.</p>
-        <h3>What is some advice you have for junior year?</h3>
+
+
+            <p></p>
+            <button class="collapsible"><h3>How can I get ahead in my class?</h3></button>
+            <div class="content answers">
+              <p>
+                Not a lot of people know, but you can most definitely take class at your local community college. Not only will you get high school credit, but you'll recieve college credit. This is a great way to get ahead in high school while also getting ahead in college. I would also join college prep programs such as AVID. These types of programs are known for getting students ahead.
+            </p>
+            </div>
+        <!-- <h3>What is some advice you have for junior year?</h3>
           <p class="answers">
             <strong>Aubri Bowman:</strong>
-              I wish someone would have told me this before I started my junior year: <strong>IT IS NOT AS BAD AS EVERYONE SAYS IT IS.</strong> I personally enjoyed my junior year but it was quite a step up from sophmore year. Sophmore year, teachers are little more relaxed than they are junior year. Probably because you're still a recovering freshman whereas when you're a junior they always say <strong>"You need to mature, you're going to be a senior next year."</strong> To make sure you don't stress yourself out, continue doing things that make you <strong>laugh, smile, and just have fun</strong>. I played two sports and I attened homecoming and prom. I also went to sports games, especially since rival games are the best. Lastly, <strong>DO NOT PROCRASTINATE!</strong> I am warning you. DO NOT DO IT! You may be able to get the assignment done but teachers know when you waited the last minute and your work isn't as good as it could have been. Even after you finally finish a six page essay in three hours, you'll be exhausted. If you don't procrastinate often, you will succeed. Do not be afraid to challenge yourself and it is okay to fail. Just learn from your mistakes, and push yourself to do better the next time.</p>
+              I wish someone would have told me this before I started my junior year: <strong>IT IS NOT AS BAD AS EVERYONE SAYS IT IS.</strong> I personally enjoyed my junior year but it was quite a step up from sophmore year. Sophmore year, teachers are little more relaxed than they are junior year. Probably because you're still a recovering freshman whereas when you're a junior they always say <strong>"You need to mature, you're going to be a senior next year."</strong> To make sure you don't stress yourself out, continue doing things that make you <strong>laugh, smile, and just have fun</strong>. I played two sports and I attened homecoming and prom. I also went to sports games, especially since rival games are the best. Lastly, <strong>DO NOT PROCRASTINATE!</strong> I am warning you. DO NOT DO IT! You may be able to get the assignment done but teachers know when you waited the last minute and your work isn't as good as it could have been. Even after you finally finish a six page essay in three hours, you'll be exhausted. If you don't procrastinate often, you will succeed. Do not be afraid to challenge yourself and it is okay to fail. Just learn from your mistakes, and push yourself to do better the next time.
+            </p> -->
+
         <h3> What is UCSD college campus like?</h3>
           <p class="answers">
             UCSD has 6 colleges: Warren College, Eleanor Roosevelt College (ERC), Revelle,
@@ -242,19 +282,24 @@
             Warren College is more engineering/CS focused and a lot of their gen-ed
              requirements overlap with major requirements.
           </p>
-        <h3>Do AP courses/tests matter? </h3>
-          <p class="answers">
-            AP courses count towards your high school GPA but an A is technically
-            like a 5 towards your GPA (weighted) if your school is on a 4.0 scale.
-            However, colleges do not look at AP test scores when admitting you.
-            Once you’re admitted then they look at your scores to pass you out of
-            classes and give you credits. Not all AP courses will be accepted for
-            credit so look through the university websites or email an advisor to
-            see which courses will transfer for credit.
-            <a href="https://local-resources.ucdavis.edu/local_resources/docs/APIBCharts/APCurrent.pdf">Here</a> is an example chart
-            for UC Davis but this may change so do a Google Search too
 
+          <p></p>
+          <button class="collapsible"><h3>Do AP courses/tests matter? </h3></button>
+          <div class="content answers">
+            <p>
+                AP courses count towards your high school GPA but an A is technically
+                like a 5 towards your GPA (weighted) if your school is on a 4.0 scale.
+                However, colleges do not look at AP test scores when admitting you.
+                Once you’re admitted then they look at your scores to pass you out of
+                classes and give you credits. Not all AP courses will be accepted for
+                credit so look through the university websites or email an advisor to
+                see which courses will transfer for credit.
+                <a href="https://local-resources.ucdavis.edu/local_resources/docs/APIBCharts/APCurrent.pdf">Here</a> is an example chart
+                for UC Davis but this may change so do a Google Search too
           </p>
+        </div>
+
+
         <h3> What is work study? </h3>
           <p class="answers">
             UCSD describes work study as
@@ -270,9 +315,11 @@
             <strong>you have to get a job or you won’t get the moneys$$$</strong>
 
           </p>
-        <h3>Are most of your classes taught by professors or TA’s? </h3>
-          <p class="answers">
-            <strong>Marivi Sifuentes:</strong>
+
+          <p></p>
+          <button class="collapsible"><h3>Are most of your classes taught by professors or TA’s?</h3></button>
+          <div class="content answers">
+            <p>  <strong>Marivi Sifuentes:</strong>
                Courses that don’t have a discussion (like Calculus or English) are usually taught by professors or Graduate Student Instructors (GSI).
             Lectures are always led by professors but if a lecture has a lab or a discussion that is usually led by GSI. In some cases I have had TAs
             (undergrads) lead but usually these sections aren’t as helpful because of their lack of experience. I would suggest that you use Rate My Professor
@@ -283,6 +330,9 @@
             All of my classes have lectures and discussions. So lectures are either Monday, Wednesday, Friday or Tuesday, Thursday and discussions
             for each of these classes are once a week. Lectures are taught by professors/lecturers and discussions are led by TA’s/tutors who are usually graduate students.
           </p>
+        </div>
+
+
         <h3>How big are your classes? </h3>
           <p class="answers">
             <strong>Marvi Sifuentes:</strong>
@@ -304,21 +354,27 @@
             In discussions, the TA usually reviews what was brought up in lecture
             that week and answers any questions.
           </p>
-        <h3>Is it popular to study abroad?</h3>
-          <p class="answers">
-            <strong>Marivi Sifuentes: </strong>
-            Very! There are companies that provide opportunities but I
-            would recommend that you speak with an advisor before signing up
-            just so you can be completely sure that the courses will transfer to
-            your university. Try finding/applying for study abroad scholarships
-             offered by your university because it can be very expensive.
+
+          <p></p>
+          <button class="collapsible"><h3>Is it popular to study abroad?</h3></button>
+          <div class="content answers">
+            <p>  <strong>Marivi Sifuentes: </strong>
+              Very! There are companies that provide opportunities but I
+              would recommend that you speak with an advisor before signing up
+              just so you can be completely sure that the courses will transfer to
+              your university. Try finding/applying for study abroad scholarships
+               offered by your university because it can be very expensive.
+             </p>
+             <p class="answers">
+              <strong>Nicole Martindale:</strong>
+               Probably. I’m not sure since I haven’t thought about it yet but
+               there’s a lot of resources on campus for scholarships and information.
+              <a href="https://studyabroad.ucsd.edu/">Here</a> is a resource for UCSD's program.
            </p>
-           <p class="answers">
-            <strong>Nicole Martindale:</strong>
-             Probably. I’m not sure since I haven’t thought about it yet but
-             there’s a lot of resources on campus for scholarships and information.
-            <a href="https://studyabroad.ucsd.edu/">Here</a> is a resource for UCSD's program.
-          </p>
+          </div>
+
+
+
           <!-- <h3> In what ways is Studying Abroad beneficial?</h3>
           <p class="answers">
             <strong> By studying abroad students will have the opportunity to
@@ -357,14 +413,16 @@
                comfortable so you can focus but not to the point where you want to sleep.
 
              </p>
-
-             <h3>Do colleges allow students to switch majors?</h3>
-               <p class="answers">
-                 <strong>Khai'Aira:</strong>
+             <p></p>
+             <button class="collapsible"><h3>Do colleges allow students to switch majors?</h3></button>
+             <div class="content answers">
+               <p><strong>Khai'Aira:</strong>
                  Colleges in fact do allow students to switch their majors.
                  Studies find that students switch their majors at least once,if not multiple times.
                  With that being said it is best to choose a college that offer multiple majors that interest you.
-               </p>
+              </p>
+             </div>
+
 
                <h3>What are the GED requirements when it comes to applying to college?</h3>
                  <p class="answers">
@@ -375,15 +433,19 @@
                    are best for you to take.
                  </p>
 
-                 <h3>How do you save more money?</h3>
-                   <p class="answers">
-                     <strong>Khai'Aira:</strong>
+                 <p></p>
+                 <button class="collapsible"><h3>How do you save more money?</h3></button>
+                 <div class="content answers">
+                   <p><strong>Khai'Aira:</strong>
                      Saving money can be hard. In order to save money build yourself an emergency fund.
                      This should be money you save just in case your running low plus,its always good
                      to have some money put up to the side because you never know what could happen.
                      It would also help if you create a budget for yourself and try your hardest not to go over that budget.
                      You can limit spending money by deciding whether or not you NEED or WANT whatever it is you are trying to purchase.
                      If you do these three things you should see yourself saving more money rather than spending it.
+                  </p>
+                 </div>
+
 
                      <h3>What are the acceptance rates of popular universities?</h3>
                        <p class="answers">
@@ -435,15 +497,37 @@
                          <b>
                            32.8%.
                          </b>
-                   <h3>Do grades matter in college?</h3>
-                     <p class="answers">
-                       <strong>Karina:</strong>
-                      Grades are definitely important in college so that you can actually graduate.
-                      Moreover, grades do affect some of the jobs you can apply for during and
-                      even after college. Generally, if you maintain a 3.0 GPA or higher you shouldn't
-                      worry. Although the 3.0 GPA is good if you are looking to stand out as an applicant
-                      at a new job that may be competitive you should aim higher with your grades, and 
-                      be able to apply anywhere without feeling self conscious about sending in your transcript.
-                     </p>
+
+
+
+               <p></p>
+               <button class="collapsible"><h3>Do grades matter in college?</h3></button>
+               <div class="content answers">
+                 <p><strong>Karina:</strong>
+                Grades are definitely important in college so that you can actually graduate.
+                Moreover, grades do affect some of the jobs you can apply for during and
+                even after college. Generally, if you maintain a 3.0 GPA or higher you shouldn't
+                worry. Although the 3.0 GPA is good if you are looking to stand out as an applicant
+                at a new job that may be competitive you should aim higher with your grades, and
+                be able to apply anywhere without feeling self conscious about sending in your transcript.</p>
+               </div>
+
+                     <script>
+                   var coll = document.getElementsByClassName("collapsible");
+                   var i;
+
+                   for (i = 0; i < coll.length; i++) {
+                       coll[i].addEventListener("click", function() {
+                           this.classList.toggle("active");
+                           var content = this.nextElementSibling;
+                           if (content.style.display === "block") {
+                               content.style.display = "none";
+                           } else {
+                               content.style.display = "block";
+                           }
+                       });
+                   }
+                   </script>
+
     </body>
 <html>
