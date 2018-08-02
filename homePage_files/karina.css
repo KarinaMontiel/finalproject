@@ -1,0 +1,132 @@
+#title{
+  font-family: 'Monoton', cursive;
+}
+
+#title2{
+  font-family: 'Abril Fatface', cursive;
+  color:#f2be54;
+  font-size: 50px;
+
+}
+
+#hometext{
+  font-family: 'Poiret One', cursive;
+}
+
+#bios{
+  font-family: 'Cinzel Decorative', cursive;
+  color:#f2be54;
+  font-size: 20px;
+}
+
+html{
+  background-color: #153e5c;
+    color:#f2be54;
+}
+
+.center {
+    display: block;
+    margin-left: 250px;
+    /* margin-right: auto; */
+    /* note!! marivi removed the line above and changed margin-left:auto to margin-left:20px */
+    width: 20%;
+}
+
+#title3{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 40px;
+}
+
+h3{
+  /* font-weight: bold; */
+  text-decoration: underline;
+  /* font-family: 'Abril Fatface', cursive; */
+  font-family: 'Lobster Two', cursive;
+  font-size: 30px;
+
+}
+
+.answers{
+  font-family: 'Unica One', cursive;
+  font-size: 20px;
+}
+
+
+
+a:link{
+  color:#cdd4ca;
+}
+
+a:visited{
+  color:#cdd4ca;
+}
+
+strong{
+  color:#cdd4ca;
+}
+
+
+#mapid {
+  height: 180px;
+}
+
+#title4{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50px;
+
+}
+
+.left {
+float: left;
+padding: 0 20px 20px 0;
+}
+
+img{
+  width: 100px;
+}
+
+#img1{
+  width:160px;
+}
+
+.biopics{
+  border-radius: 50%;
+}
+
+#white{
+  padding-top: 20px;
+}
+
+.blue{
+  color:#cdd4ca;
+}
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    /* max-height: 0; */
+    overflow: hidden;
+    /* transition: max-height 0.2s ease-out; */
+    background-color: #f1f1f1;
+}
